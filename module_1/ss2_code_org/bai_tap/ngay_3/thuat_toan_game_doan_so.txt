@@ -1,0 +1,9 @@
+Begin
+  INPUT N 
+  INPUT M
+  N<=9
+  IF (N==M)
+    Display "Dự đoán đúng"         
+  ELSE             
+    Display "Dự đoán sai" 
+End

@@ -1,0 +1,15 @@
+start
+ input n
+ n <= 100
+ if n => 75 
+  display "Loại A"
+ else if (60 <= n < 75)
+  display "Loại B"
+ else if (45 <= n < 60)
+  display "Loại C"
+ else if (35 <= n < 45)
+  display "Loại D"
+ else (n < 35)
+  display "Loại E"
+
+ end.

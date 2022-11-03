@@ -1,0 +1,16 @@
+start
+	input:	a,b,c
+
+	if a>b 
+		if a>c
+		display : "so lon nhat là: a" 
+		else
+		display : "so lon nhat là: c" 
+		end if
+
+	else if b>c
+		display : "so lon nhat là: b" 
+		else
+		display : "so lon nhat là: c" 
+	end if
+end

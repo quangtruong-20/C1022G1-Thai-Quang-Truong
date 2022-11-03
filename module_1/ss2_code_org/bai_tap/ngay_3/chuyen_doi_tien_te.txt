@@ -1,0 +1,5 @@
+start
+	input: usd
+	 VNĐ = usd * 23000
+	display: VNĐ
+end
