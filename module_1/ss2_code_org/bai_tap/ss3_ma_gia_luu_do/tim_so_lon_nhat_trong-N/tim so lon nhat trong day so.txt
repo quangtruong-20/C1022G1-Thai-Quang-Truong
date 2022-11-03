@@ -3,14 +3,13 @@ start
 	input a1,a2,a3...an
 
 	max=a1
-	i=0
+	i=1
 
-while (i<n)
-	if ai > max
+while(i<=n) {
+	if(max<ai)
 	display max=ai
-	end if
-	i=i+1
-	if i>n then end while
+		i++
+	}
 	display max
 end
 
