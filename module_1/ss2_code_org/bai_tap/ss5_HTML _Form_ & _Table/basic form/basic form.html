@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tạo form đơn giản</title>
+    <style>
+        table {
+        border: 1px solid  #aca8a8;
+         border-collapse: collapse;;
+       }
+       .head {
+        text-align: center;
+        background-color: rgb(239, 126, 13);
+        color: aliceblue;
+       }
+       .leftside {
+        text-align: left;
+       }
+            
+       
+    </style>
+</head>
+<body>
+    <table >
+        <tr class="head" >
+            <td colspan="4"  > 
+                <label> SỞ THÍCH CỦA BẠN</label>
+            </td> 
+        </tr>
+
+        <tr>
+            <td class="leftside">  
+                <label style="color:rgb(23, 0, 155);"> Họ và tên </label> 
+            </td>
+            <td>
+                <input type="text" name="yourname"><br>
+
+            </td>        
+        </tr>
+
+        <tr>
+            <td class="leftside">
+                <label style="color:rgb(23, 0, 155);"> Email</label>
+            </td>
+            <td>
+                <input type="text" name="Email"> 
+            </td>    
+           
+        </tr>
+       
+        <tr>
+            <td class="leftside">
+                <label style="color:rgb(23, 0, 155);"> Sở thích </label>
+                
+            </td>
+            <td style="color: rgb(255, 149, 0) ;"> <input  type="checkbox" name="hobby"> Thể thao</td>
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Âm nhạc</td>
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Đọc sách</td>
+            
+        </tr>
+    
+        <tr>
+            <td> </td>
+
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Lướt web</td>
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Chơi game</td>
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Điện ảnh</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="color: rgb(255, 149, 0) ;"> <input type="checkbox" name="hobby"> Du lịch</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Gửi thông tin"></td>
+            <td><input type="reset" value="Nhập lại"></td>
+            <td></td>
+        </tr>
+        
+    </table >
+</body>
+</html>
