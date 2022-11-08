@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>điểm trung bình</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+    <script>
+        function tinhDiemTrungBinh() {
+            let diemHoa = parseInt(prompt("Nhập điểm hoá: "));
+            let diemLy = parseInt(prompt("Nhập điểm lý: "));
+            let diemSinh = parseInt(prompt("Nhập điểm sinh: "));
+    
+            let dtb = (diemHoa + diemLy + diemSinh) / 3;
+            alert("Điểm trung bình là: " + dtb);
+        }
+    
+        function chuyenDoiNhietDo() {
+            let doC = parseFloat(prompt("Nhập nhiệt độ(C): "));
+            let doF = 9 / 5 * doC + 32;
+            alert(doC + " độ C bằng " + doF + " độ F");
+        }
+    
+        function tinhDienTichHinhTron() {
+            let banKinhHinhTron = parseFloat(prompt("Nhập bán kính hình tròn: "));
+            let dienTichHinhTron = banKinhHinhTron * banKinhHinhTron * Math.PI;
+    
+            alert("Diện tích hình tròn có bán kính " + banKinhHinhTron + " là: " + dienTichHinhTron);
+        }
+    
+        function tinhChuViHinhTron() {
+            let banKinhHinhTron = parseFloat(prompt("Nhập bán kính hình tròn: "));
+            let chuViHinhTron = banKinhHinhTron * 2 * Math.PI;
+    
+            alert("Chu vi hình tròn có bán kính " + banKinhHinhTron + " là: " + chuViHinhTron);
+        }
+    </script>
+    <button onclick="tinhDiemTrungBinh()"> Tính điểm trung bình</button>
+    <button onclick="chuyenDoiNhietDo()"> Chuyển đổi nhiệt độ</button>
+    <button onclick="tinhDienTichHinhTron()">Tính diện tích hình tròn</button>
+    <button onclick="tinhChuViHinhTron()">Tính chu vi hình tròn</button>
+    </body>
+    </html>
