@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table border="2"  >
+        <tr>
+            <td colspan="4" id="result">
+                1
+            </td>
+        </tr>
+        <tr>
+            <td><button id="so" onclick="so" style="width:100% ;" >1</button></td>
+            <td><button id="so" onclick="so" style="width:100% ;">2</button></td>
+            <td><button id="so" onclick="so" style="width:100% ;">3</button></td>
+            <td><button id="so" onclick="so" style="width:100% ;">+</button></td>
+        </tr>
+        <tr>
+            <td> <button id="so" onclick="so" style="width:100% ;">4</button></td>
+            <td><button id="so" onclick="so" style="width:100% ;">5</button></td>
+            <td><button id="so" onclick="so" style="width:100% ;">6</button></td>
+            <td><button style="width:100% ;">-</button></td>
+        </tr>
+        <tr>
+            <td> <button id="so" onclick="so" style="width:100% ;">7</button></td>
+            <td><button id="so" onclick="so">8</button></td>
+            <td><button id="so" onclick="so">9</button></td>
+            <td><button style="width:100% ;">x</button></td>
+        </tr>
+        <tr>
+            <td> <button id="xoa" onclick="xoa">C</button></td>
+            <td><button id="so" onclick="so">0</button></td>
+            <td><button id="bang()" onclick="bang" >=</button></td>
+            <td><button id="chia" onclick="chia" style="width:100% ;">/</button></td>
+        </tr>
+    </table>
+    <script>
+        let so = document.getElementById('so').value;
+        let cong = document.getElementById('cong').value;
+        let tru = document.getElementById('tru').value;
+        let nhan = document.getElementById('nhan').value;
+        let chia = document.getElementById('chia').value;
+        let xoa = document.getElementById('xoa').value;
+        let bang = document.getElementById('bang').value;
+        
+        let result = '';
+
+        function bang() {
+            
+        }
+
+
+
+    </script>
+</body>
+</html>

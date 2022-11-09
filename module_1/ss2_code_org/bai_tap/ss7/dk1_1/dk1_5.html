@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt('Điểm bài kiểm tra: '));
+        let b = parseInt(prompt ('Điểm thi giữa kì')) ;
+        let c = parseInt(prompt ('Điểm thi cuối kì')) ;
+        let d = (a + b*2 +c*3) / 6 ;
+
+
+         if ( d >= 9 ) {
+            alert ('Hạng A');
+         } else if ( d >= 7 ) {
+            alert ('Hạng B');
+         } else if ( d >= 5) {
+            alert ('Hạng C');
+         } else if ( d < 5) {
+            alert ('Hạng F');
+         }
+        
+    </script>
+</body>
+</html>
