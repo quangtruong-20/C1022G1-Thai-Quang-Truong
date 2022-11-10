@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Công cụ tính thuế onl</h2>
+    Thu nhập tháng : <input type="text" id="money">
+    <button onclick="check()" name="Tính">Tính</button>
+    <p id="result"></p>
+    
+    <script>
+        function check() { 
+            let a = document.getElementById('money').value;
+            let c;
+        if ( a <= 5 ) {
+            let c = a * 5/100 ;
+            document.getElementById('result').innerHTML = 'Số thuế phải nộp là : ' + c + ' triệu đồng';
+        }
+         else if  ( a>5 && a <= 10 ) {
+            let c = a * 10/100 -0.25 ;
+            document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        }   
+        else if (a>10 && a<=18 ) {
+            let c = a * 15/100 -0.75 ;
+            document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        }   
+        else if ( a>18 && a<=32 ) {
+            let c = a * 20/100 - 1.65 ;
+            document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        } else if  ( a>32 && a<=52) {
+            let c = a * 25/100 -3.25 ;
+            document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        } else if   ( a>52 && a<=80 ) {
+            let c = a * 30/100 -5.85 ;
+           document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        } else if   ( a>85 ) {
+            let c = a * 35/100 -9.85 ;
+            document.getElementById('result').innerHTML ='Số thuế phải nộp là : ' + c + ' triệu đồng';
+        }
+
+        }
+        
+
+    </script>
+</body>
+</html>

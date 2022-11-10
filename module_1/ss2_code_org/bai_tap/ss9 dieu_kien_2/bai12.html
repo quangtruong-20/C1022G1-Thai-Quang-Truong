@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+            
+
+<body>
+    <table>
+        <tr>
+            <td><p> Số tiền vay :  </p></td>
+            <td><input type="text" name="loan" id="loan"></td>           
+        </tr>
+        <tr>
+            <td><p> Lãi suất / năm :  </p></td>
+            <td><input type="text" name="interest" id="interest" ></td>          
+        </tr>
+        <tr>
+            <td><p> Số tháng vay : </p></td>
+            <td><input type="text" name="month" id="month"></td>    
+        </tr>
+        <tr>
+            <td><button onclick="submit()"  >submit</button></td>
+        </tr>
+        <tr>
+            <td><p id="result"></p></td>
+
+        </tr>
+        <tr>
+            <td><p id="result2"></p></td>
+        </tr>
+        <tr>
+            <td><p id="result3" ></p></td>
+        </tr>
+    </table>
+    <script> 
+        function submit() {
+            let  a = +document.getElementById ('loan').value;
+            let  b = +document.getElementById ('interest').value;
+            let  c = +document.getElementById ('month').value;
+            
+            let d = a / c ;
+            document.getElementById("result").innerHTML = 'Số tiền gốc phải trả ngân hàng là: ' + d  + ' triệu đồng' ;
+
+            let e = (a * b/100) *1000 / c ;
+            document.getElementById("result2").innerHTML = 'số lãi phải trả ngân hàng là: ' + e + ' ngàn đồng';
+
+            let f = d + e;
+            document.getElementById("result3").innerHTML = 'số tiền phải trả hằng tháng là: ' + f  + ' triệu đồng' ;
+           
+        }
+        
+
+    </script>
+</body>
+</html>

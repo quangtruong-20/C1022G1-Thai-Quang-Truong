@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Giải phương trình bậc 2</h2>
+    <p>Nhập các tham số của phương trình ax2 + bx + c = 0</p>
+    <table>
+        <tr>
+            <td>Nhập a</td>
+            <td><input type="text" id="inputA" name="A"></td>
+        </tr>
+        <tr>
+            <td>Nhập b</td>
+            <td><input type="text" id="inputB" name="B"></td>
+        </tr>
+        <tr>
+            <td>Nhập c</td>
+            <td><input type="text" id="inputC" name="C"></td>
+        </tr>
+        <tr>
+            <td><button onclick="check()" name="hehe">Kết quả</button></td>
+        </tr>
+        <p id="result"></p>
+    </table>
+
+        <script>
+            function check() {
+                let a = document.getElementById('inputA').value;
+                let b = document.getElementById('inputB').value;
+                let c = document.getElementById('inputC').value;
+                let d = b*b - 4*a*c ;
+                let x1 = (-b + Math.sqrt(d))/(2*a);
+                let x2 = (-b - Math.sqrt(d))/(2*a);
+                let x3 = -b/(2*a)
+                if (d < 0) {
+                    document.getElementById('result').innerHTML =  'Phương trình vô nghiệm .'
+        } 
+                else if ( d==0 ) {
+                    document.getElementById('result').innerHTML = 'Phương trình có nghiệm kép là x1 = x2 =  ' + x3 .
+        }
+                else if (d > 0) {
+                    document.getElementById('result').innerHTML = 'phương trình có 2 nghiệm phân biệt là:  '+ x1 +' và '+ + x2 .
+                   
+        }
+            }
+
+        </script>
+
+</body>
+</html>
