@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+   
+        let numb = +prompt('Nhập số nguyên');
+        let kiemtra;
+        let count = 0;
+        while (count < 20) {
+            kiemtra = true;
+            for (let i = 2; i < numb; i++) {
+                if (numb % i == 0 && numb > 1) {
+                    kiemtra = false;
+                    break;
+                }
+            }
+            numb = +prompt('mời bạn nhập số tiếp theo');
+    
+            if (kiemtra) {
+                kiemtra = true;
+                document.write(numb + 'Số nguyên tố<br>')
+                count++;
+            }
+        } 
+    </script>
+</body>
+</html>
