@@ -9,20 +9,20 @@
     <script>
    
         let numb = +prompt('Nhập số nguyên');
-        let kiemtra;
+        let kiemTra;
         let count = 0;
         while (count < 20) {
-            kiemtra = true;
+            kiemTra = true;
             for (let i = 2; i < numb; i++) {
                 if (numb % i == 0 && numb > 1) {
-                    kiemtra = false;
+                    kiemTra = false;
                     break;
                 }
             }
             numb = +prompt('mời bạn nhập số tiếp theo');
     
-            if (kiemtra) {
-                kiemtra = true;
+            if (kiemTra) {
+                kiemTra = true;
                 document.write(numb + 'Số nguyên tố<br>')
                 count++;
             }
