@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên. -->
+    <!-- Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên. -->\
+
+
+    <script>
+            let num = 7 ;
+            let sum = 0 ;
+            let i = 1 ;
+
+            while (i<=30) {
+                if ( num % 7 == 0) {
+                     i++
+             document.writeln(num)
+                     sum = sum + num ;
+                 }
+                     num = num +7 ;
+            }
+            document.writeln( 'Tổng của 30 số chia hết cho 7 đầu tiên '+sum)
+            
+
+
+    </script>
 </body>
 </html>
