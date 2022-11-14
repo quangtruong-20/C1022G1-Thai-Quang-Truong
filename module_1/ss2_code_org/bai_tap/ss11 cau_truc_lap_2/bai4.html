@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- In hình chữ nhật -->
-                <script>
-                  let a = +prompt ('Nhập chiều ngang');
-                  let b = +prompt ('Nhập chiều dọc');
-                 
-                  for (let i = 1 ; i <= a ;i++){
-                    a = a - i  
-                    document.write( a  )
-                  }
-
-                </script>
-
-
-
-
-
-
-
-
-</body>
+    <script>
+      let n = +prompt("Nhập chiều dài");
+      let m = +prompt("Nhập chiều rộng");
+      for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+          if (i === 0 || j === 0 || i === m - 1 || j === n - 1) {
+            document.write("*");
+          } else document.write("&nbsp;&nbsp");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
 </html>

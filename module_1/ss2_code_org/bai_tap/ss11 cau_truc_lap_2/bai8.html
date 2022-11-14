@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <button onclick="doanso()">bắt đầu</button>
+      <button onclick="doanso()">bắt đầu</button>
     </div>
     <p></p>
 
     <script>
-        function doanso() {
-            let n = +prompt('Mời bạn đoán số nằm trong khoảng nào ?')
-            let ran = Math.floor(Math.random() * n);
-            console.log(ran);
-            let guest = +prompt('Mời bạn đoán ');
-            let count = 0;
+      function doanso() {
+        let n = +prompt("Mời bạn đoán số nằm trong khoảng nào ?");
+        let ran = Math.floor(Math.random() * n);
+        console.log(ran);
+        let guest = +prompt("Mời bạn đoán ");
+        let count = 0;
 
-            while(guest !== ran) {
-                count++ ;
-                if(count==4) {
-                    alert('bạn hết số lần đoán');
-                    break
-                } else if (guest>ran) {
-                    alert('số bạn đoán lớn hơn');
-                } else {
-                    alert('số bạn đoán bé hơn')
-                }
-                guest = +prompt('Mời bạn đoán ');
-            }
-            
-            if (count == 4) {
-                document.write('bạn hết số lần đoán')}
-            else {
-                document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
-            } 
-            }
+        while (guest !== ran) {
+          count++;
+          if (count == 4) {
+            alert("bạn hết số lần đoán");
+            break;
+          } else if (guest > ran) {
+            alert("số bạn đoán lớn hơn");
+          } else {
+            alert("số bạn đoán bé hơn");
+          }
+          guest = +prompt("Mời bạn đoán ");
+        }
 
-        
-
+        if (count == 4) {
+          document.write("bạn hết số lần đoán");
+        } else {
+          document.write("Bạn đã đoán đúng số. Chúc mừng bạn!");
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
