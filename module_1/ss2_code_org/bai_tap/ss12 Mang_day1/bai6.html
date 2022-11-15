@@ -9,17 +9,23 @@
   <body>
     <script>
       let a = [];
-      let v;
-      for (let i = 1; i <= 3; i++) {
-        a[i] = +prompt("nhập số nguyên");
+
+      for (let i = 0; i < 3; i++) {
+        a[i] = +prompt("nhập số nguyên thứ " + i);
       }
+      document.write(a + "<br>");
+
+      let v = +prompt("nhập V");
+      let kiemTra = false;
       for (let i = 0; i < a.length; i++) {
-        v = +prompt("nhập V");
-        if (v == a[i]) {
-          document.write("V in the array");
-        } else {
-          document.write("V is not in the array");
+        if (v === a[i]) {
+          document.write(v + " in the array");
+          kiemTra = true;
+          break;
         }
+      }
+      if (kiemTra === false) {
+        document.write(v + " is not in the array");
       }
     </script>
   </body>
