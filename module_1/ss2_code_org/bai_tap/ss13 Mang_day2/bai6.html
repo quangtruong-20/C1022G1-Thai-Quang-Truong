@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết chương trình nhập vào một mảng ký tự,
+     tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ ) -->
+
+    <script>
+      let a = [];
+      let b = +prompt("Nhập độ dài của mảng");
+      for (let i = 0; i < b; i++) {
+        a[i] = prompt(`Nhập kí tự vào a[${i}]`);
+        if (a[i] === "-") {
+          a[i] = "_";
+        }
+      }
+      document.write(a.join(" "));
+    </script>
+  </body>
+</html>

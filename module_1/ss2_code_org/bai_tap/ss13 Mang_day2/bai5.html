@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -->
+    <script>
+      let chuoi1 = prompt("Nhập chuỗi 1");
+      let chuoi2 = prompt("Nhập chuỗi 2");
+      let mang1 = chuoi1.split();
+      let mang2 = chuoi2.split();
+      let flag = true;
+
+      for (i = 0; i < chuoi1.length; i++) {
+        if (mang1[i] === mang2[i]) {
+        } else {
+          flag = false;
+          alert("2 chuỗi khác nhau");
+          break;
+        }
+      }
+      if (flag) {
+        alert("2 chuỗi giống nhau");
+      }
+    </script>
+  </body>
+</html>
