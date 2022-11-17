@@ -7,22 +7,22 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V. 
-      Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng 
-      (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng) -->
     <script>
-      let arrSoNguyen = [32, 1, 34, 2, 2, 2, 5, 51, 99, 765];
-      let V = parseInt(prompt("number: "));
-      for (let i = 0; i <= arrSoNguyen.length - 1; i++) {
-        if (arrSoNguyen[i] === V) {
-          for (let j = i; j <= arrSoNguyen.length - 2; j++) {
-            arrSoNguyen[j] = arrSoNguyen[j + 1];
+      let numb = new Array(10);
+      for (let i = 0; i < numb.length; i++) {
+        numb[i] = +prompt("Nhập 10 phần tử của mảng");
+      }
+      let numbV = +prompt("Nhập số nguyên V");
+      for (let j = 0; j < numb.length; j++) {
+        if (numb[j] === numbV) {
+          for (let k = j; k < numb.length - 1; k++) {
+            numb[k] = numb[k + 1];
           }
-          arrSoNguyen[arrSoNguyen.length - 1] = 0;
-          i--;
+          numb[numb.length - 1] = 0;
+          j--;
         }
       }
-      console.log(arrSoNguyen);
+      document.write(numb);
     </script>
   </body>
 </html>
