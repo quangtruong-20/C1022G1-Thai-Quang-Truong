@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, 
+        hiển thị hộp thoại thông báo cho người dùng. 
+        Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số. -->
+
+    <script>
+      function soSanh(a, b) {
+        if (a > b) {
+          alert("số " + a + " > số " + b);
+        } else if (a <= b) {
+          return a + b;
+        }
+      }
+      document.write(
+        soSanh(+prompt("Nhập số thứ 1"), +prompt("Nhập số thứ 2"))
+      );
+    </script>
+  </body>
+</html>

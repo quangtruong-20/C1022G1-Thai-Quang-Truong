@@ -7,9 +7,13 @@
     <title>Document</title>
   </head>
   <body>
+    <input type="text" id="tieng_anh" name="search" />
+    <input type="button" value="Tìm" onclick="dich()" />
+    <p id="tieng_viet"></p>
+
     <script>
-      let tieng_anh = document.getElementById("tieng_anh");
-      console.log(tieng_anh.value);
+      let tieng_anh = document.getElementById("tieng_anh").value;
+      // console.log(tieng_anh.value);
       let mangTA = ["how", "old", "are", "you", "i", "am", "fine", "thanks"];
       let mangTV = [
         "làm sao",
