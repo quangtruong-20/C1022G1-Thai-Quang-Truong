@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+         Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.  -->
+    <script>
+      //   let b = prompt("nhập số zô");
+      let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1, 16, 17, 18];
+      let b = +prompt("nhập số");
+      function check(arr2) {
+        let dem = 0;
+        for (let i = 0; i < a.length; i++) {
+          if (b == arr2[i]) {
+            dem = dem + 1;
+          }
+        }
+        if (dem == 0) {
+          return -1;
+        }
+        return dem;
+      }
+      document.write(check(a));
+    </script>
+  </body>
+</html>
