@@ -7,8 +7,8 @@
   <body>
     <script>
       class Temperature {
-        constructor(C, F, Kelvin) {
-          (this.C = C), (this.F = F), (this.Kelvin = Kelvin);
+        constructor(C) {
+          this.C = C;
         }
         doC() {
           console.log(`Nhiệt độ hiện tại là : ${this.C} độ C`);
@@ -25,7 +25,7 @@
         }
       }
 
-      let swap = new Temperature(5, 0, 0);
+      let swap = new Temperature(5);
 
       swap.doC();
       swap.doF();
