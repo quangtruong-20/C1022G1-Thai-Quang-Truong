@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n.
+       Với m, n là các số nhập từ bàn phím. -->
+
+    <script>
+      function sum(m, n) {
+        let a = [];
+        let sum = 0;
+        for (let i = 0; i < m.length; i++) {
+          for (let j = 0; i < n.length; j++) {
+            a = [i][j];
+            break;
+          }
+        }
+      }
+
+      document.write(sum(prompt("nhập số hàng m"), prompt("nhập số hàng n")));
+    </script>
+  </body>
+</html>

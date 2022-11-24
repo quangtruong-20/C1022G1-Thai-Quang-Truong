@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+  b[0]   = a[0]
+  b[1]   = a[0] + a[1]
+  b[2]   = a[0] + a[1] + a[2]
+  ...
+  b[n - 1] = a[0] + a[1] + ... + a[n - 1]
+với n là độ dài của mảng a.
+Ví dụ: Cho a = [1, 2, 3], thì kết quả prefixSums(a) = [1, 3, 6].
+Mảng b được tạo ra: [1, 1 + 2, 1 + 2 + 3] = [1, 3, 6] -->
+
+    <script>
+      let n = prompt("Nhập số lượng của mảng");
+      let a = [];
+      for (i = 0; i < n; i++) {
+        a[i] = +prompt(`Nhập phần tử a[${i}]`);
+      }
+
+      let b = [];
+      b[0] = a[0];
+      for (i = 1; i < n; i++) {
+        b[i] = +b[i - 1] + +a[i];
+      }
+      console.log(a);
+      console.log(b);
+    </script>
+  </body>
+</html>
