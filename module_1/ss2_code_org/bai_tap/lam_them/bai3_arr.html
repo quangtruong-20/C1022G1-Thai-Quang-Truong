@@ -8,5 +8,43 @@
   </head>
   <body>
     <!-- Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều -->
+    <script>
+      let m = prompt("Nhập độ dài mảng 1");
+      let n = prompt("Nhập độ dài mảng 2");
+      let arr1 = [];
+      let arr2 = [];
+      for (let i = 0; i < m; i++) {
+        arr1[i] = prompt(`nhập phần tử thứ ${i} của mảng 1`);
+      }
+      for (let i = 0; i < n; i++) {
+        arr2[i] = prompt(`nhập phần tử thứ ${i} của mảng 2`);
+      }
+      check(arr1, arr2);
+
+      function check(arr1, arr2) {
+        let arr = [arr1, arr2];
+        document.write(arr1 + "<br>" + arr2 + "<br>");
+        let max = arr[0][0];
+        let min = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] > max) {
+              max = arr[i][j];
+            }
+            if (arr[i][j] < min) {
+              min = arr[i][j];
+            }
+          }
+        }
+        return document.write(
+          "Giá  trị lớn nhất là: " +
+            max +
+            "<br>" +
+            "Giá trị nhỏ nhất là: " +
+            min
+        );
+      }
+      // document.write(check());
+    </script>
   </body>
 </html>

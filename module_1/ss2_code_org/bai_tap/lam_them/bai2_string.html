@@ -12,15 +12,16 @@ Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.
 ⇨	Có 3 kí tự khác nhau là a, b và c. -->
     <script>
       function differentSymbolsNaive(s) {
-        let dem = 0;
-        for (let i = 1; i < s.length; i++) {
-          if (s[0] != s[i]) {
-            dem++;
+        let newStr = " ";
+        for (let i = 0; i < s.length; i++) {
+          if (newStr.includes(s[i]) == false) {
+            newStr = newStr + s[i];
           }
         }
-        return dem;
+
+        return newStr.length;
       }
-      document.write(differentSymbolsNaive(prompt("nhập số")));
+      console.log(differentSymbolsNaive("sbcdsbch"));
     </script>
   </body>
 </html>

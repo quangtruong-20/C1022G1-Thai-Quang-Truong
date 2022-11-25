@@ -11,18 +11,31 @@
        Với m, n là các số nhập từ bàn phím. -->
 
     <script>
-      function sum(m, n) {
-        let a = [];
-        let sum = 0;
-        for (let i = 0; i < m.length; i++) {
-          for (let j = 0; i < n.length; j++) {
-            a = [i][j];
-            break;
+      let m = prompt("Nhập độ dài mảng 1");
+      let arr1 = [];
+      let n = prompt("Nhập độ dài mảng 2");
+      let arr2 = [];
+
+      let dem = 0;
+      for (let i = 0; i < m; i++) {
+        arr1[i] = prompt(`Nhap phan tu thu ${i} cua mang 1 `);
+      }
+      for (let i = 0; i < n; i++) {
+        arr2[i] = prompt(`Nhap phan tu thu ${i} cua mang 2 `);
+      }
+      sum(arr1, arr2);
+      function sum(arr1, arr2) {
+        let arr3 = [arr1, arr2];
+        document.write(arr1 + "<br>" + arr2 + "<br>");
+        for (let i = 0; i < arr3.length; i++) {
+          for (let j = 0; j < arr3[i].length; j++) {
+            if (arr3[i][j] % 2 === 0) {
+              dem = dem + arr3[i][j];
+            }
           }
         }
+        return document.write("Tổng của các số chẵn trong ma trận là: " + dem);
       }
-
-      document.write(sum(prompt("nhập số hàng m"), prompt("nhập số hàng n")));
     </script>
   </body>
 </html>

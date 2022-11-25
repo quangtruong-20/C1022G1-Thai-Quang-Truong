@@ -8,5 +8,26 @@
   </head>
   <body>
     <!-- Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó. -->
+    <script>
+      function nguyen(a) {
+        let dem = 0;
+
+        let dem1 = 0;
+        for (let i = 0; i <= a.length; i++) {
+          if (a[i] % i === 0);
+          dem++;
+        }
+        if (dem == 2) {
+          dem1++;
+          return true;
+        } else {
+          return false;
+        }
+        return dem1++;
+      }
+      let a = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
+      // [(5, 3, 4, 5, 1, 2, 3, 4)]
+      console.log(nguyen(a));
+    </script>
   </body>
 </html>
