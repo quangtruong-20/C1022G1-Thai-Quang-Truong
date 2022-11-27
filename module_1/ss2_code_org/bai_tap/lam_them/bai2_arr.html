@@ -7,27 +7,38 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="bai2"></div>
+
     <!-- Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó. -->
     <script>
-      function nguyen(a) {
-        let dem = 0;
+      function snt(n) {
+        if (n < 2) return false;
 
-        let dem1 = 0;
-        for (let i = 0; i <= a.length; i++) {
-          if (a[i] % i === 0);
-          dem++;
+        for (let i = 2; i < n; i++) {
+          if (n % i === 0) {
+            return false;
+          }
         }
-        if (dem == 2) {
-          dem1++;
-          return true;
-        } else {
-          return false;
-        }
-        return dem1++;
+        return true;
       }
-      let a = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
-      // [(5, 3, 4, 5, 1, 2, 3, 4)]
-      console.log(nguyen(a));
+      let arr = [
+        [1, 7, 3, 4],
+        [5, 6, 13, 8],
+        [2, 11, 6, 9],
+      ];
+      let dem = 0;
+      let result = "";
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+          if (snt(arr[i][j])) {
+            dem++;
+            result += arr[i][j] + ", ";
+          }
+        }
+      }
+
+      console.log(dem);
+      console.log(result);
     </script>
   </body>
 </html>
