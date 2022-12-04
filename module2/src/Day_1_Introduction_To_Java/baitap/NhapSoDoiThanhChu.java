@@ -2,7 +2,7 @@ package Day_1_Introduction_To_Java.baitap;
 
 import java.util.Scanner;
 
-public class Docsothanhchu {
+public class NhapSoDoiThanhChu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập số cần đọc : ");
