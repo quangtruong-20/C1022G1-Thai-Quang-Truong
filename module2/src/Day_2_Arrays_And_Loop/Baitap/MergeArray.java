@@ -4,15 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeArray {
-    //    Bước 1: Tạo 2 mảng số với kích thước cho trước
-//
-//    Bước 2: Sử dụng vòng lặp nhập giá trị cho các phần tử trong mảng
-//
-//    Bước 3: Tạo mảng thứ 3 có kích thước bằng kích thước mảng 1 + kích thước mảng 2
-//
-//    Bước 4: Sử dụng vòng lặp để duyệt các phần tử trong mảng 1. Lấy từng phần tử trong mảng 1 gán vào từng phần tử trong mảng thứ 3, tính từ phần tử đầu tiên.
-//
-//    Bước 5: Sử dụng vòng lặp để duyệt các phần tử trong mảng 2. Lấy từng phần tử trong mảng 2 gán vào phần tử tiếp theo của mảng 3, tính từ phần tử array3[array2.length]
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] a = new int[3];
@@ -29,13 +20,6 @@ public class MergeArray {
         }
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
-
-//        int fal = a.length;
-//        int sal = b.length;
-//        int[] result = new int[fal + sal];
-//        System.arraycopy(a, 0, result, 0, fal);
-//        System.arraycopy(b, 0, result, fal, sal);
-//        System.out.println(Arrays.toString(result));
 
         int c[] = new int[a.length + b.length];
         for (int i = 0; i < a.length; i++) {

@@ -2,7 +2,7 @@ package Day_2_Arrays_And_Loop.Baitap;
 
 import java.util.Scanner;
 
-public class Print_Image {
+public class PrintImage {
     public static void main(String[] args) {
         int choice = -1;
         Scanner input = new Scanner(System.in);
