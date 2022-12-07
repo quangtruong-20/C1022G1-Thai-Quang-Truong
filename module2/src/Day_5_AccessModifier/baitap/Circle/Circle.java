@@ -2,11 +2,12 @@ package Day_5_AccessModifier.baitap.Circle;
 
 public class Circle {
     private double radius = 1.0;
-    private String color = "red";
+    private final String color = "red";
 
-    public Circle(){}
+    public Circle() {
+    }
 
-    public  Circle(double r){
+    public Circle(double r) {
         radius = r;
     }
 
@@ -15,6 +16,6 @@ public class Circle {
     }
 
     protected double getArea() {
-        return this.radius*this.radius*3.14;
+        return this.radius * this.radius * 3.14;
     }
 }

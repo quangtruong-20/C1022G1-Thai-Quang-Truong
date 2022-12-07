@@ -3,26 +3,27 @@ package Day_4_ClassAndObject.Baitap.Fan;
 public class Fan {
 
 
-    public  final int SLOW  = 1;
-    public  final int MEDIUM  = 2;
-    public  final int FAST  = 3;
+    public final int SLOW = 1;
+    public final int MEDIUM = 2;
+    public final int FAST = 3;
 
     private int speed;
-    private boolean on ;
+    private boolean on;
     private double radius;
     private String color;
 
-    public Fan(){
-        this.color= "blue";
+    public Fan() {
+        this.color = "blue";
         this.on = false;
-        this.radius= 5;
-        this.speed= SLOW;
+        this.radius = 5;
+        this.speed = SLOW;
     }
-    public Fan(int speed,double radius, String color, boolean on){
+
+    public Fan(int speed, double radius, String color, boolean on) {
         this.speed = speed;
         this.radius = radius;
-        this.color=color;
-        this.on= on;
+        this.color = color;
+        this.on = on;
     }
 
     @Override
@@ -31,7 +32,7 @@ public class Fan {
         String statusFan = this.on ? " Fan is on " : " Fan is off ";
         return "Fan{" +
                 "speed=" + speed + " " +
-                 statusFan +
+                statusFan +
                 ", radius=" + radius +
                 ", color='" + color + '\'' +
                 '}';
