@@ -6,10 +6,12 @@ public class Point2D {
     private float x = 0;
     private float y = 0;
 
-    public Point2D(){}
-    public Point2D( float x, float y){
+    public Point2D() {
+    }
+
+    public Point2D(float x, float y) {
         this.x = x;
-        this.y =y;
+        this.y = y;
     }
 
     public float getX() {
@@ -27,12 +29,14 @@ public class Point2D {
     public void setY(float y) {
         this.y = y;
     }
-    public void setXY(float x,float y){
-        this.x=x;
-        this.y=y;
+
+    public void setXY(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
+
     public float[] getXY() {
-        float[] result = {this.x,this.y};
+        float[] result = {this.x, this.y};
         return result;
     }
 
@@ -44,36 +48,41 @@ public class Point2D {
                 '}';
     }
 }
- class Point3D extends Point2D {
+
+class Point3D extends Point2D {
     private float z = 0;
-    public Point3D(float x, float y, float z){
+
+    public Point3D(float x, float y, float z) {
         super(x, y);
-        this.z=z;
+        this.z = z;
     }
-    public  Point3D(){}
 
-     public float getZ() {
-         return z;
-     }
+    public Point3D() {
+    }
 
-     public void setZ(float z) {
-         this.z = z;
-     }
+    public float getZ() {
+        return z;
+    }
 
-     public void setXYZ(float x, float y, float z){
+    public void setZ(float z) {
+        this.z = z;
+    }
+
+    public void setXYZ(float x, float y, float z) {
         this.setZ(z);
         this.setX(x);
         this.setY(y);
-     }
-     public float[] getXYZ() {
-         float[] result = {this.getX(),this.getY(),this.z};
-         return result;
-     }
+    }
 
-     @Override
-     public String toString() {
-         return "Point3D" +
-                  Arrays.toString( getXYZ())
-                 ;
-     }
- }
+    public float[] getXYZ() {
+        float[] result = {this.getX(), this.getY(), this.z};
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Point3D" +
+                Arrays.toString(getXYZ())
+                ;
+    }
+}

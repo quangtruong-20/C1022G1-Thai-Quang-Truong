@@ -1,6 +1,6 @@
 package Day_6_KeThua.bai_tap.bai_1;
 
-public class  Circle {
+public class Circle {
     private double radius;
     private String colors;
 
@@ -21,12 +21,12 @@ public class  Circle {
         return colors;
     }
 
-    public void setColors(String colors) {
-        this.colors = colors;
-    }
-
     public String getColors() {
         return colors;
+    }
+
+    public void setColors(String colors) {
+        this.colors = colors;
     }
 
     public double getArea() {
@@ -37,12 +37,12 @@ public class  Circle {
     public String toString() {
         return "Circle{" +
                 "radius=" + getRadius() +
-                ", colors=" + getColors() + " ,Area: " +getArea() +
+                ", colors=" + getColors() + " ,Area: " + getArea() +
                 '}';
     }
 }
 
-   class Cylinder extends Circle {
+class Cylinder extends Circle {
     private final double height;
 
     public Cylinder(double radius, String colors, double height) {
@@ -50,9 +50,9 @@ public class  Circle {
         this.height = height;
     }
 
-    public  double getVolume(){
+    public double getVolume() {
 
-        return getArea()*height;
+        return getArea() * height;
     }
 
     public double getHeight() {
@@ -64,7 +64,7 @@ public class  Circle {
     @Override
     public String toString() {
         return "Cylinder{" +
-                "height= " + getHeight() + ", colors= " +getColors() +", Volume= " + getVolume() +
+                "height= " + getHeight() + ", colors= " + getColors() + ", Volume= " + getVolume() +
                 '}';
     }
 }
