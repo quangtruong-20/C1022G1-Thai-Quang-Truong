@@ -1,6 +1,9 @@
 package Day_6_KeThua.thuc_hanh;
 
 public class CirclesTest {
+    public CirclesTest(double radius) {
+    }
+
     public static void main(String[] args) {
         Circles circles = new Circles();
         System.out.println(circles);
