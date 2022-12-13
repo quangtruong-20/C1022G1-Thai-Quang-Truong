@@ -1,4 +1,4 @@
-package Day_7.bai_tap.Resizeable;
+package Day_7_AbstractClass_Interface.bai_tap.Resizeable;
 
 public class Circle extends Shape  implements IResizeable{
 
@@ -6,8 +6,6 @@ public class Circle extends Shape  implements IResizeable{
     private double radius;
 
 
-    public Circle() {
-    }
 
     public Circle(double radius) {
         this.radius = radius;
@@ -23,6 +21,8 @@ public class Circle extends Shape  implements IResizeable{
 
 
 
+
+    @Override
     public double getArea() {
         return radius * radius * Math.PI;
     }
@@ -34,8 +34,6 @@ public class Circle extends Shape  implements IResizeable{
                 " ,Area: " + getArea() +
                 '}';
     }
-
-
     @Override
     public void resize(double percent) {
         this.radius *= percent;

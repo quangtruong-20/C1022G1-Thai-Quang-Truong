@@ -1,6 +1,4 @@
-package Day_7.thuc_hanh.Animal;
-
-import Day_7.thuc_hanh.Animal.*;
+package Day_7_AbstractClass_Interface.thuc_hanh.Animal;
 
 public class AnimalTest {
     public static void main(String[] args) {

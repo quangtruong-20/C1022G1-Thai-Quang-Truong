@@ -1,4 +1,4 @@
-package Day_7.thuc_hanh.Animal;
+package Day_7_AbstractClass_Interface.thuc_hanh.Animal;
 
 public abstract class Animal {
     public abstract String makeSound();

@@ -1,12 +1,11 @@
-package Day_7.bai_tap.Resizeable;
+package Day_7_AbstractClass_Interface.bai_tap.Resizeable;
 
 public class Square extends Shape implements IResizeable{
 
 
     private int edge ;
 
-    public Square() {
-    }
+
 
     public Square(int edge) {
         this.edge = edge;
@@ -20,9 +19,6 @@ public class Square extends Shape implements IResizeable{
         this.edge = edge;
     }
 
-    public  int getAreaSquare (){
-        return this.edge * this.edge;
-    }
 
     @Override
     public String toString() {
@@ -34,4 +30,12 @@ public class Square extends Shape implements IResizeable{
     public void resize(double percent) {
         this.edge += percent;
     }
-}
+
+
+    @Override
+    public double getArea() {
+            return this.edge * this.edge;
+        }
+
+    }
+

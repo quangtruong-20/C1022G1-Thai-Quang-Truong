@@ -1,14 +1,10 @@
-package Day_7.bai_tap.Colorable;
+package Day_7_AbstractClass_Interface.bai_tap.Resizeable;
 
-import Day_7.bai_tap.Resizeable.IResizeable;
-
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements IResizeable {
 
     private int height;
     private int width;
 
-    public Rectangle() {
-    }
 
     public Rectangle(int height, int width) {
         this.height = height;
@@ -33,6 +29,7 @@ public class Rectangle extends Shape {
 
 
 
+
     @Override
     public String toString() {
         return "Rectangle{" +
@@ -40,15 +37,15 @@ public class Rectangle extends Shape {
                 ", width=" + width +
                 '}';
     }
-
     @Override
-    public String getName() {
-        return "Rectangle";
+    public void resize(double percent) {
+        this.height *= percent;
+        this.width *= percent;
     }
+
 
     @Override
     public double getArea() {
-            return this.width*this.height ;
+        return this.width*this.height;
     }
 }
-

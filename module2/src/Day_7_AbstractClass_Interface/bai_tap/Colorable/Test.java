@@ -1,4 +1,4 @@
-package Day_7.bai_tap.Colorable;
+package Day_7_AbstractClass_Interface.bai_tap.Colorable;
 
 public class Test {
     public static void main(String[] args) {
