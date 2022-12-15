@@ -1,6 +1,5 @@
 package Day_10_DSA_Stack_Queue.baitap.ReverseArray;
 
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -21,7 +20,6 @@ public class ReverseArray {
         for (int i = 0; i < n; i++) {
             System.out.print(a.pop());
         }
-
 
 
     }

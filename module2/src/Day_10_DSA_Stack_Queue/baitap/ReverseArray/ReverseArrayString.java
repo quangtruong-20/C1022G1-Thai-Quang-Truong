@@ -5,13 +5,13 @@ import java.util.Stack;
 
 public class ReverseArrayString {
     public static void main(String[] args) {
-    Stack<String> wStack = new Stack<>();
-    Scanner scanner = new Scanner(System.in);
+        Stack<String> wStack = new Stack<>();
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập từ ");
-    String n = scanner.nextLine();
+        String n = scanner.nextLine();
 
-        for (int i = 0; i < n.length() ; i++) {
-                wStack.push(n.charAt(i)+"");
+        for (int i = 0; i < n.length(); i++) {
+            wStack.push(n.charAt(i) + "");
         }
         System.out.println(wStack);
 
