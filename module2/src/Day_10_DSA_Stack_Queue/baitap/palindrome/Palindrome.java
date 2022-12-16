@@ -17,19 +17,7 @@ public class Palindrome {
             queue.offer(n[i]);
             stack.push(n[i]);
         }
-        boolean flag = true;
-        for (int i = 0; i < n.length; i++) {
-            queue.poll();
-            stack.pop();
 
-            flag = queue.equals(stack);
-        }
-
-        if (flag) {
-            System.out.println("đây là chuỗi palidrome");
-        } else {
-            System.out.println("không phải là chuỗi palidrome");
-        }
 
 
     }
