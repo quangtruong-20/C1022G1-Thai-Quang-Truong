@@ -8,12 +8,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ProductRepository implements IProductRepository {
+     List<Product> productList = new ArrayList<>();
     Product product1 = new Product("Trà", 1, 20);
     Product product2 = new Product("C2", 2, 21);
     Product product3 = new Product("Bò húc", 3, 22);
     Product product4 = new Product("Oxi", 4, 23);
-
-    List<Product> productList = new ArrayList<>();
 
     {
         productList.add(product1);
@@ -25,8 +24,9 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void findAll() {
-        for (int i = 0; i < productList.size(); i++) {
-            System.out.println(productList.get(i));
+        for (Product product : productList
+                ) {
+            System.out.println(product.toString());
         }
     }
 

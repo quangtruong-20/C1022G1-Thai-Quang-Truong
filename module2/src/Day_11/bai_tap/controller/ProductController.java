@@ -36,7 +36,6 @@ public class ProductController{
                     String name = scanner.nextLine();
                     System.out.print("Input Price: ");
                     int  price = scanner.nextInt();
-
                     service.addProduct(new Product(name,id,price));
                     break;
                 case 3:  // delete
