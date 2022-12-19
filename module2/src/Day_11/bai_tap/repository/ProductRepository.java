@@ -8,18 +8,15 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ProductRepository implements IProductRepository {
-     List<Product> productList = new ArrayList<>();
-    Product product1 = new Product("Trà", 1, 20);
-    Product product2 = new Product("C2", 2, 21);
-    Product product3 = new Product("Bò húc", 3, 22);
-    Product product4 = new Product("Oxi", 4, 23);
-
-    {
-        productList.add(product1);
-        productList.add(product2);
-        productList.add(product3);
-        productList.add(product4);
+ public   static   List<Product> productList = new ArrayList<>();
+   static  {
+        productList.add(new Product("Trà", 1, 20));
+        productList.add(new Product("C2", 2, 21));
+        productList.add(new Product("Bò húc", 3, 22));
+        productList.add(new Product("Oxi", 4, 23));
     }
+
+
 
 
     @Override
@@ -31,9 +28,31 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void addProduct(Product product) {
-        productList.add(product);
+    public Product findById(int id) {
+        for (Product c: productList) {
+            if (c.getId() == id){
+                return c;
+            }
+        }
+        return null;
     }
+
+    @Override
+    public void update(Product product) {
+        for (int i = 0; i < productList.size() ; i++) {
+            if (product.getId() == productList.get(i).getId()){
+                productList.set(i,product);
+                break;
+            }
+        }
+    }
+
+    @Override
+    public void add(Product product) {
+       productList.add(product);
+
+    }
+
 
     @Override
     public void deleteProduct(int id) {
@@ -44,11 +63,6 @@ public class ProductRepository implements IProductRepository {
         }
     }
 
-    @Override
-    public void editInformation(int index, Product product) {
-
-        productList.set(index, product);
-    }
 
     @Override
     public void findProduct(String name) {
@@ -58,18 +72,12 @@ public class ProductRepository implements IProductRepository {
             }
         }
 
-
     }
-
     @Override
     public void sortProduct() {
-
-        Collections.sort(productList, new Comparator<Product>() {
-            @Override
-            public int compare(Product o1, Product o2) {
-                return o1.getId() - o2.getId();
-            }
-        });
+        Collections.sort(productList);
+Collections.reverse(Collections.singletonList(productList));
     }
+
 
 }

@@ -1,10 +1,12 @@
 package Day_11.bai_tap.model;
 
-public class Product {
+public class Product implements Comparable<Product> {
     private String name;
     private int id ;
     private int price;
 
+    public Product() {
+    }
 
     public Product(String name, int id, int price) {
         this.name = name;
@@ -43,5 +45,10 @@ public class Product {
                 ", id=" + id +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+        return this.price - o.price;
     }
 }

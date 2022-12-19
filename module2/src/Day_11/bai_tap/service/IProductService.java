@@ -5,9 +5,13 @@ import Day_11.bai_tap.model.Product;
 public interface IProductService {
 
     void findAll();
-    void addProduct(Product product);
+    // hàm add
+    Product findById( int id);
+    void  update(Product product);
+    // ..........................
+    void add(Product product);
+
     void deleteProduct(int id);
-    void editInformation(int index,Product product);
     void findProduct(String name);
     void sortProduct();
 
