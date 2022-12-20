@@ -1,29 +1,26 @@
 package Day_100_CaseStudy.Model;
 
-public class Customer {
+import java.util.Date;
+
+public class Customer extends Person{
     private int customerId;
-    private String name;
-    private int dayOfBirth;
-    private String sex;
-    private int cmnd;
-    private int phone;
-    private String email;
     private String typeOfCustomer;
-    private String adress;
+    private String address;
 
     public Customer() {
     }
 
-    public Customer(int customerId, String name, int dayOfBirth, String sex, int cmnd, int phone, String email, String typeOfCustomer, String adress) {
+    public Customer(int customerId, String typeOfCustomer, String address) {
         this.customerId = customerId;
-        this.name = name;
-        this.dayOfBirth = dayOfBirth;
-        this.sex = sex;
-        this.cmnd = cmnd;
-        this.phone = phone;
-        this.email = email;
         this.typeOfCustomer = typeOfCustomer;
-        this.adress = adress;
+        this.address = address;
+    }
+
+    public Customer(String name, Date birthDate, String gender, int identificationNumber, int phoneNumber, String email, int customerId, String typeOfCustomer, String address) {
+        super(name, birthDate, gender, identificationNumber, phoneNumber, email);
+        this.customerId = customerId;
+        this.typeOfCustomer = typeOfCustomer;
+        this.address = address;
     }
 
     public int getCustomerId() {
@@ -34,53 +31,9 @@ public class Customer {
         this.customerId = customerId;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public int getDayOfBirth() {
-        return dayOfBirth;
-    }
 
-    public void setDayOfBirth(int dayOfBirth) {
-        this.dayOfBirth = dayOfBirth;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public int getCmnd() {
-        return cmnd;
-    }
-
-    public void setCmnd(int cmnd) {
-        this.cmnd = cmnd;
-    }
-
-    public int getPhone() {
-        return phone;
-    }
-
-    public void setPhone(int phone) {
-        this.phone = phone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public String getTypeOfCustomer() {
         return typeOfCustomer;
@@ -90,31 +43,23 @@ public class Customer {
         this.typeOfCustomer = typeOfCustomer;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
     public String toString() {
         return "Customer{" +
                 "customerId=" + customerId +
-                ", name='" + name + '\'' +
-                ", dayOfBirth=" + dayOfBirth +
-                ", sex='" + sex + '\'' +
-                ", cmnd=" + cmnd +
-                ", phone=" + phone +
-                ", email='" + email + '\'' +
                 ", typeOfCustomer='" + typeOfCustomer + '\'' +
-                ", adress='" + adress + '\'' +
+                ", adress='" + address + '\'' +
                 '}';
     }
-
-
 }
 enum TypeOfCustomer {
-    Diamond, Platinium, Gold, Silver, Member
+    DIAMOND, PLATINIUM, GOLD, SILVER, MEMBER
 }
