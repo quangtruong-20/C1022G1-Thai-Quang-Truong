@@ -1,5 +1,6 @@
 package Day_100_CaseStudy.Model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Customer extends Person{
@@ -16,8 +17,8 @@ public class Customer extends Person{
         this.address = address;
     }
 
-    public Customer(String name, Date birthDate, String gender, int identificationNumber, int phoneNumber, String email, int customerId, String typeOfCustomer, String address) {
-        super(name, birthDate, gender, identificationNumber, phoneNumber, email);
+    public Customer(String identificationNumber, String name, LocalDate birthDate, Gender gender, String phoneNumber, String email, int customerId, String typeOfCustomer, String address) {
+        super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.customerId = customerId;
         this.typeOfCustomer = typeOfCustomer;
         this.address = address;

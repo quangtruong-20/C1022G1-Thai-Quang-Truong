@@ -2,15 +2,15 @@ package Day_100_CaseStudy.Model;
 
 abstract class Facility {
 
-        private String name;
+         private String serviceName;
         private double area;
         private double price;
         private int maxCapacity;
         private RentType rentType;
 
 
-        public Facility(String name, double area, double price, int maxCapacity, RentType rentType) {
-            this.name = name;
+        public Facility(String serviceName, double area, double price, int maxCapacity, RentType rentType) {
+            this.serviceName = serviceName;
             this.area = area;
             this.price = price;
             this.maxCapacity = maxCapacity;
@@ -18,11 +18,11 @@ abstract class Facility {
         }
 
         public String getName() {
-            return name;
+            return serviceName;
         }
 
-        public void setName(String name) {
-            this.name = name;
+        public void setName(String serviceName) {
+            this.serviceName = serviceName;
         }
 
         public double getArea() {
@@ -60,7 +60,7 @@ abstract class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "name='" + name + '\'' +
+                "name='" + serviceName + '\'' +
                 ", area=" + area +
                 ", price=" + price +
                 ", maxCapacity=" + maxCapacity +

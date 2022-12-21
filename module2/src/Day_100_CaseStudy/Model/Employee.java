@@ -1,5 +1,6 @@
 package Day_100_CaseStudy.Model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Employee extends Person {
@@ -8,16 +9,15 @@ public class Employee extends Person {
     private Position position;
     private double salary;
 
-    public Employee() {
-    }
 
-    public Employee(String name, Date birthDate, String gender, int identificationNumber, int phoneNumber, String email, String employeeId, Education education, Position position, double salary) {
-        super(name, birthDate, gender, identificationNumber, phoneNumber, email);
+    public Employee(String employeeId, String name, LocalDate birthDate, Gender gender,String identificationNumber, String phoneNumber, String email, Education education, Position position, double salary) {
+        super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.employeeId = employeeId;
         this.education = education;
         this.position = position;
         this.salary = salary;
     }
+
 
     public String getEmployeeId() {
         return employeeId;
@@ -54,17 +54,17 @@ public class Employee extends Person {
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeId='" + employeeId + '\'' +
+                "employeeId='" + employeeId + '\'' + ", name"+getName()+" , phoneNumeber"+ getPhoneNumber()+" ,dateOfBirth"+ getBirthDate() +", gender" + getGender()+ ", identityNumber"+ getIdentificationNumber()+
                 ", education=" + education +
                 ", position=" + position +
                 ", salary=" + salary +
                 '}';
-    }
 }
- enum Education {
+ public enum Education {
     INTERMEDIATE, COLLEGE, UNIVERSITY, POSTGRADUATE
 }
 
- enum Position {
+ public enum Position {
     RECEPTIONIST, SERVER, SPECIALIST, SUPERVISOR, MANAGER, DIRECTOR
 }
+    }

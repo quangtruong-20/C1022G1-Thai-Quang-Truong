@@ -1,21 +1,22 @@
 package Day_100_CaseStudy.Model;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
-abstract class Person {
+public abstract class Person {
+    private String identificationNumber;
     private String name;
-    private Date birthDate;
-    private String gender;
-    private int identificationNumber;
-    private int phoneNumber;
+    private LocalDate birthDate;
+    private Gender gender;
+    private String phoneNumber;
     private String email;
 
 
     public Person() {
     }
 
-    public Person(String name, Date birthDate, String gender, int identificationNumber, int phoneNumber, String email) {
+    public Person(String identificationNumber, String name, LocalDate birthDate, Gender gender, String phoneNumber, String email) {
         this.name = name;
         this.birthDate = birthDate;
         this.gender = gender;
@@ -32,35 +33,35 @@ abstract class Person {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
-    public int getIdentificationNumber() {
+    public String getIdentificationNumber() {
         return identificationNumber;
     }
 
-    public void setIdentificationNumber(int identificationNumber) {
+    public void setIdentificationNumber(String identificationNumber) {
         this.identificationNumber = identificationNumber;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -82,8 +83,8 @@ abstract class Person {
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
                 '}';
-    }
 }
-enum Gender {
+public enum Gender {
     MALE,FEMALE
 }
+    }
