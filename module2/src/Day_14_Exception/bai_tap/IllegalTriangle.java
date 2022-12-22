@@ -3,7 +3,7 @@ package Day_14_Exception.bai_tap;
 import java.util.Scanner;
 
 public class IllegalTriangle {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalTriangleException {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -14,32 +14,27 @@ public class IllegalTriangle {
         System.out.println("Nhập cạnh c: ");
         int c = Integer.parseInt(scanner.nextLine());
 
-
-        try {
-            check(a,b,c);
-            System.out.println("Đây là 3 cạnh của tam giác");
-        }catch (IllegalTriangleException e) {
-            System.out.println(e.getMessage());
-        }
+        check(a,b,b);
 
     }
 
-   public static void check(int a, int b, int c) throws IllegalTriangleException {
+   public static void check(int a, int b, int c)  {
 
-        if (a <= 0 || b <= 0 || c <= 0) {
-            throw new IllegalTriangleException("3 cạnh phải lớn hơn 0. ");
-        }
+       try {
 
-        if (a + b <= c || a + c <= b || c + b <= a) {
+           if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a) {
+               System.out.println("Đây là 3 cạnh của tam giác ");
+           } else {
+               throw new IllegalTriangleException();
+           }
 
-            throw new IllegalTriangleException("Tổng của 2 cạnh phải lớn hơn cạnh còn lại. ");
-        }
 
-    }
+       } catch (IllegalTriangleException e ){
+           System.out.println("Đây không phải là 3 cạnh của tam giác");
+       }
 
-    static class IllegalTriangleException extends Exception {
-        public IllegalTriangleException(String message) {
-            super(message);
-        }
-    }
+       finally {
+           System.out.println("Kết thúc chương trình");
+       }
+   }
 }

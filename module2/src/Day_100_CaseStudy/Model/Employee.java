@@ -1,16 +1,17 @@
 package Day_100_CaseStudy.Model;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Employee extends Person {
-    private String employeeId;
+    private int employeeId;
     private Education education;
     private Position position;
     private double salary;
 
 
-    public Employee(String employeeId, String name, LocalDate birthDate, Gender gender,String identificationNumber, String phoneNumber, String email, Education education, Position position, double salary) {
+    public Employee(int employeeId, String name, LocalDate birthDate, Gender gender
+            ,String identificationNumber, String phoneNumber, String email, Education education,
+                    Position position, double salary) {
         super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.employeeId = employeeId;
         this.education = education;
@@ -19,11 +20,11 @@ public class Employee extends Person {
     }
 
 
-    public String getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(String employeeId) {
+    public void setEmployeeId(int    employeeId) {
         this.employeeId = employeeId;
     }
 
@@ -54,7 +55,7 @@ public class Employee extends Person {
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeId='" + employeeId + '\'' + ", name"+getName()+" , phoneNumeber"+ getPhoneNumber()+" ,dateOfBirth"+ getBirthDate() +", gender" + getGender()+ ", identityNumber"+ getIdentificationNumber()+
+                "employeeId='" + employeeId + '\'' + ", name= "+getName() +" , phoneNumber= "+ getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()+ ", identityNumber: "+ getIdentificationNumber()+
                 ", education=" + education +
                 ", position=" + position +
                 ", salary=" + salary +

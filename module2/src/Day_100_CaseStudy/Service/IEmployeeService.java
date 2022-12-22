@@ -4,7 +4,7 @@ import Day_100_CaseStudy.Model.Employee;
 
 public interface IEmployeeService extends IService {
     public void displayEmployee();
-//    void addEmployee();
+    public void addEmployee(Employee employee );
 //    // chỉnh sửa thông tin,
 //
 //    Employee findById(String id);
