@@ -12,25 +12,13 @@ import java.util.Scanner;
 import static Day_16.bai_tap.repository.ProductRepository.productList;
 
 public class ProductController {
-    private static final String FILE_PATH = "D:\\codegym\\module2\\src\\Day_16\\bai_tap\\data\\product.dat";
     private static final IProductService service = new ProductService();
-    public static void writeObjectList(List<Product> productList) throws IOException {
-        FileOutputStream fos = new FileOutputStream(FILE_PATH);
-        ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(productList);
-        oos.close();
-    }
-    public static List<Product> readObjectList() throws IOException, ClassNotFoundException {
-        FileInputStream fis = new FileInputStream(FILE_PATH);
-        ObjectInputStream ois = new ObjectInputStream(fis);
-        List<Product> productList = (List<Product>) ois.readObject();
-        ois.close();
-        return productList;
-    }
+
+
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         mainMenu();
-        writeObjectList(productList);
+
     }
 
     public static void mainMenu() throws IOException, ClassNotFoundException {

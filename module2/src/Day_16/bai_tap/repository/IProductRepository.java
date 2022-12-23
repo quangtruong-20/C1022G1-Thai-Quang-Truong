@@ -2,10 +2,12 @@ package Day_16.bai_tap.repository;
 
 import Day_16.bai_tap.model.Product;
 
-public interface IProductRepository {
-    void addProduct(Product product);
+import java.io.IOException;
 
-    void display();
+public interface IProductRepository {
+    void addProduct(Product product) throws IOException;
+
+    void display() throws IOException;
 
     Product findByCode(String code);
 
