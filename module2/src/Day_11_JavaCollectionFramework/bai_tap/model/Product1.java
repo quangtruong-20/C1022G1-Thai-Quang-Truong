@@ -1,6 +1,6 @@
 package Day_11_JavaCollectionFramework.bai_tap.model;
 
-public class Product implements Comparable<Product> {
+public class Product extends Day_16.bai_tap.model.Product implements Comparable<Product> {
     private String name;
     private int id ;
     private int price;
