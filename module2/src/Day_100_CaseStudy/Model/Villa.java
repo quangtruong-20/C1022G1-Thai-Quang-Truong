@@ -1,5 +1,7 @@
 package Day_100_CaseStudy.Model;
 
+import Day_100_CaseStudy.Model.enum_model.RentType;
+
 public class Villa extends Facility {
         private String roomStandard;
         private double swimmingPoolArea;

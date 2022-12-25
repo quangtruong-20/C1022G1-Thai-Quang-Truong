@@ -1,4 +1,6 @@
 package Day_100_CaseStudy.Service.impl;
 
-public class BookingService {
+import Day_100_CaseStudy.Service.IBookingService;
+
+public class BookingService implements IBookingService {
 }

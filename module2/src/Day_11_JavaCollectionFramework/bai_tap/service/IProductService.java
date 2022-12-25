@@ -1,15 +1,15 @@
 package Day_11_JavaCollectionFramework.bai_tap.service;
 
-import Day_11_JavaCollectionFramework.bai_tap.model.Product;
+import Day_11_JavaCollectionFramework.bai_tap.model.Product1;
 
 public interface IProductService {
 
     void findAll();
     // hàm add
-    Product findById( int id);
-    void  update(Product product);
+    Product1 findById(int id);
+    void  update(Product1 product);
     // ..........................
-    void add(Product product);
+    void add(Product1 product);
 
     void deleteProduct(int id);
     void findProduct(String name);

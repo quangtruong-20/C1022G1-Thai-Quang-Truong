@@ -1,17 +1,20 @@
 package Day_100_CaseStudy.Model;
 
-import java.time.LocalDate;
+
+import Day_100_CaseStudy.Model.enum_model.Education;
+import Day_100_CaseStudy.Model.enum_model.Gender;
+import Day_100_CaseStudy.Model.enum_model.Position;
 
 public class Employee extends Person {
     private int employeeId;
     private Education education;
     private Position position;
-    private double salary;
+    private int salary;
 
 
-    public Employee(int employeeId, String name, LocalDate birthDate, Gender gender
-            ,String identificationNumber, String phoneNumber, String email, Education education,
-                    Position position, double salary) {
+    public Employee(int employeeId, String name, Date birthDate, Gender gender
+            , String identificationNumber, String phoneNumber, String email, Education education,
+                    Position position, int salary) {
         super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.employeeId = employeeId;
         this.education = education;
@@ -48,24 +51,20 @@ public class Employee extends Person {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "employeeId='" + employeeId + '\'' + ", name= "+getName() +" , phoneNumber= "+ getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()+ ", identityNumber: "+ getIdentificationNumber()+
+                "employeeId='" + employeeId + '\'' + ", name= "+getName() +" , phoneNumber= "
+                + getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()
+                + ", identityNumber: "+ getIdentificationNumber()+
                 ", education=" + education +
                 ", position=" + position +
                 ", salary=" + salary +
                 '}';
-}
- public enum Education {
-    INTERMEDIATE, COLLEGE, UNIVERSITY, POSTGRADUATE
+    }
 }
 
- public enum Position {
-    RECEPTIONIST, SERVER, SPECIALIST, SUPERVISOR, MANAGER, DIRECTOR
-}
-    }

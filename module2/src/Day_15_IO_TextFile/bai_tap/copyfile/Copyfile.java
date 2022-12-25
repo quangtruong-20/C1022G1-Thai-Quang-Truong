@@ -50,7 +50,7 @@ public class Copyfile {
             }
             System.out.println(charCount);
 
-            fileReader.close();
+
             buff.close();
         } catch (Exception e) {
             System.out.println("Không thể đếm được");

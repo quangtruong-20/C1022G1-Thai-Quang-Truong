@@ -1,4 +1,6 @@
 package Day_100_CaseStudy.Service.impl;
 
-public class FacilityService {
+import Day_100_CaseStudy.Service.IFacilityService;
+
+public class FacilityService implements IFacilityService {
 }

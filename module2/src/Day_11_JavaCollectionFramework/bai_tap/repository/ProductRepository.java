@@ -1,18 +1,18 @@
 package Day_11_JavaCollectionFramework.bai_tap.repository;
 
-import Day_11_JavaCollectionFramework.bai_tap.model.Product;
+import Day_11_JavaCollectionFramework.bai_tap.model.Product1;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class ProductRepository implements IProductRepository {
- public   static   List<Product> productList = new ArrayList<>();
+ public   static   List<Product1> productList = new ArrayList<>();
    static  {
-        productList.add(new Product("Trà", 1, 20));
-        productList.add(new Product("C2", 2, 21));
-        productList.add(new Product("Bò húc", 3, 22));
-        productList.add(new Product("Oxi", 4, 23));
+        productList.add(new Product1("Trà", 1, 20));
+        productList.add(new Product1("C2", 2, 21));
+        productList.add(new Product1("Bò húc", 3, 22));
+        productList.add(new Product1("Oxi", 4, 23));
     }
 
 
@@ -20,15 +20,15 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void findAll() {
-        for (Product product : productList
+        for (Product1 product : productList
                 ) {
             System.out.println(product.toString());
         }
     }
 
     @Override
-    public Product findById(int id) {
-        for (Product c: productList) {
+    public Product1 findById(int id) {
+        for (Product1 c: productList) {
             if (c.getId() == id){
                 return c;
             }
@@ -37,7 +37,7 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void update(Product product) {
+    public void update(Product1 product) {
         for (int i = 0; i < productList.size() ; i++) {
             if (product.getId() == productList.get(i).getId()){
                 productList.set(i,product);
@@ -47,7 +47,7 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void add(Product product) {
+    public void add(Product1 product) {
        productList.add(product);
 
     }

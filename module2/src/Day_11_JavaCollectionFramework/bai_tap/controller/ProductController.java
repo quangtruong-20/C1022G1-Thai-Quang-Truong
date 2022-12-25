@@ -1,7 +1,7 @@
 package Day_11_JavaCollectionFramework.bai_tap.controller;
 
 
-import Day_11_JavaCollectionFramework.bai_tap.model.Product;
+import Day_11_JavaCollectionFramework.bai_tap.model.Product1;
 import Day_11_JavaCollectionFramework.bai_tap.service.IProductService;
 import Day_11_JavaCollectionFramework.bai_tap.service.ProductService;
 
@@ -36,7 +36,7 @@ public class ProductController {
                     int id = Integer.parseInt(scanner.nextLine());
                     System.out.print("Input Price: ");
                     int price = Integer.parseInt(scanner.nextLine());
-                    Product product = new Product(name, id, price);
+                    Product1 product = new Product1(name, id, price);
                     service.add(product);
                     break;
                 case 3:  // delete
@@ -48,7 +48,7 @@ public class ProductController {
                     System.out.println("Input Id: ");
                     int id4 = Integer.parseInt(scanner.nextLine());
 
-                    Product c = service.findById(id4);
+                    Product1 c = service.findById(id4);
 
                     if (c != null) {
 

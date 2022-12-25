@@ -1,28 +1,24 @@
 package Day_100_CaseStudy.Model;
 
-import java.time.LocalDate;
-import java.util.Date;
+
+import Day_100_CaseStudy.Model.enum_model.Gender;
+import Day_100_CaseStudy.Model.enum_model.TypeOfCustomer;
 
 public class Customer extends Person{
     private int customerId;
-    private String typeOfCustomer;
+    private TypeOfCustomer typeOfCustomer;
     private String address;
 
-    public Customer() {
-    }
 
-    public Customer(int customerId, String typeOfCustomer, String address) {
-        this.customerId = customerId;
-        this.typeOfCustomer = typeOfCustomer;
-        this.address = address;
-    }
-
-    public Customer(String identificationNumber, String name, LocalDate birthDate, Gender gender, String phoneNumber, String email, int customerId, String typeOfCustomer, String address) {
+    public Customer( int customerId,String name,Date birthDate,Gender gender, String identificationNumber, String address,    String phoneNumber,
+                    String email, TypeOfCustomer typeOfCustomer) {
         super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.customerId = customerId;
         this.typeOfCustomer = typeOfCustomer;
         this.address = address;
     }
+
+
 
     public int getCustomerId() {
         return customerId;
@@ -36,11 +32,11 @@ public class Customer extends Person{
 
 
 
-    public String getTypeOfCustomer() {
+    public TypeOfCustomer getTypeOfCustomer() {
         return typeOfCustomer;
     }
 
-    public void setTypeOfCustomer(String typeOfCustomer) {
+    public void setTypeOfCustomer(TypeOfCustomer typeOfCustomer) {
         this.typeOfCustomer = typeOfCustomer;
     }
 
@@ -55,12 +51,11 @@ public class Customer extends Person{
     @Override
     public String toString() {
         return "Customer{" +
-                "customerId=" + customerId +
-                ", typeOfCustomer='" + typeOfCustomer + '\'' +
-                ", adress='" + address + '\'' +
-                '}';
+                "customerId=" + customerId +  ", name= "+getName() +" , phoneNumber= "
+                + getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()
+                + ", identityNumber: "+ getIdentificationNumber()+
+                ", typeOfCustomer=" + typeOfCustomer +
+                ", address='" + address + '\'' +
+                "} " ;
     }
-}
-enum TypeOfCustomer {
-    DIAMOND, PLATINIUM, GOLD, SILVER, MEMBER
 }

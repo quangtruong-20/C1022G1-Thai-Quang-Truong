@@ -1,6 +1,5 @@
 package Day_100_CaseStudy.Model;
 
-import java.util.Date;
 
 public class Booking  {
     private String bookingId;

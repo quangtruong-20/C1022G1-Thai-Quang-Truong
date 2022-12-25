@@ -1,14 +1,14 @@
 package Day_11_JavaCollectionFramework.bai_tap.model;
 
-public class Product extends Day_16.bai_tap.model.Product implements Comparable<Product> {
+public class Product1 implements Comparable<Product1> {
     private String name;
     private int id ;
     private int price;
 
-    public Product() {
+    public Product1() {
     }
 
-    public Product(String name, int id, int price) {
+    public Product1(String name, int id, int price) {
         this.name = name;
         this.id = id;
         this.price = price;
@@ -48,7 +48,7 @@ public class Product extends Day_16.bai_tap.model.Product implements Comparable<
     }
 
     @Override
-    public int compareTo(Product o) {
+    public int compareTo(Product1 o) {
         return this.price - o.price;
     }
 }

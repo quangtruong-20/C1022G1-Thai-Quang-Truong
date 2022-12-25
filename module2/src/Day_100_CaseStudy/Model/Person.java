@@ -1,26 +1,24 @@
 package Day_100_CaseStudy.Model;
 
 
-import java.time.LocalDate;
-import java.util.Date;
+import Day_100_CaseStudy.Model.enum_model.Gender;
 
 public abstract class Person {
     private String identificationNumber;
     private String name;
-    private LocalDate birthDate;
+    private Date birthDate;
     private Gender gender;
     private String phoneNumber;
     private String email;
 
-
     public Person() {
     }
 
-    public Person(String identificationNumber, String name, LocalDate birthDate, Gender gender, String phoneNumber, String email) {
+    public Person(String identificationNumber, String name, Date birthDate, Gender gender, String phoneNumber, String email) {
+        this.identificationNumber = identificationNumber;
         this.name = name;
         this.birthDate = birthDate;
         this.gender = gender;
-        this.identificationNumber = identificationNumber;
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
@@ -33,11 +31,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public LocalDate getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -83,8 +81,5 @@ public abstract class Person {
                 ", phoneNumber=" + phoneNumber +
                 ", email='" + email + '\'' +
                 '}';
-}
-public enum Gender {
-    MALE,FEMALE
 }
     }

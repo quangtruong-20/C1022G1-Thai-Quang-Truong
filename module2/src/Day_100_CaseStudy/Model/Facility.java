@@ -1,5 +1,7 @@
 package Day_100_CaseStudy.Model;
 
+import Day_100_CaseStudy.Model.enum_model.RentType;
+
 abstract class Facility {
 
          private String serviceName;
@@ -68,9 +70,5 @@ abstract class Facility {
                 '}';
     }
 }
-
-    enum RentType {
-        YEAR, MONTH, DAY
-    }
 
 
