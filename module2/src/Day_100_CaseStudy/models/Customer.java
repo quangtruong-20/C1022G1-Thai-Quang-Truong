@@ -1,19 +1,15 @@
 package Day_100_CaseStudy.models;
 
 
-import Day_100_CaseStudy.models.Date;
-import Day_100_CaseStudy.models.Person;
-import Day_100_CaseStudy.models.enum_model.Gender;
-import Day_100_CaseStudy.models.enum_model.TypeOfCustomer;
 
 public class Customer extends Person {
     private  String customerId;
-    private TypeOfCustomer typeOfCustomer;
+    private String typeOfCustomer;
     private String address;
 
 
-    public Customer(String customerId, String name, Date birthDate, Gender gender, String identificationNumber, String address, String phoneNumber,
-                    String email, TypeOfCustomer typeOfCustomer) {
+    public Customer(String customerId, String name, String birthDate, String gender, String identificationNumber, String address, String phoneNumber,
+                    String email, String typeOfCustomer) {
         super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.customerId = customerId;
         this.typeOfCustomer = typeOfCustomer;
@@ -34,11 +30,11 @@ public class Customer extends Person {
 
 
 
-    public TypeOfCustomer getTypeOfCustomer() {
+    public String getTypeOfCustomer() {
         return typeOfCustomer;
     }
 
-    public void setTypeOfCustomer(TypeOfCustomer typeOfCustomer) {
+    public void setTypeOfCustomer(String typeOfCustomer) {
         this.typeOfCustomer = typeOfCustomer;
     }
 

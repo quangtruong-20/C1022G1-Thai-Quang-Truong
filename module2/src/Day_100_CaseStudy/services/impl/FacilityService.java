@@ -2,7 +2,6 @@ package Day_100_CaseStudy.services.impl;
 
 import Day_100_CaseStudy.models.Room;
 import Day_100_CaseStudy.models.Villa;
-import Day_100_CaseStudy.models.enum_model.RentType;
 import Day_100_CaseStudy.services.IFacilityService;
 
 import java.util.LinkedHashMap;
@@ -15,13 +14,13 @@ public class FacilityService implements IFacilityService {
 
     static {
 
-        roomService.put(new Room("vip", "30", "3000000", "4", RentType.DAY, "free buffet"), 3);
-        roomService.put(new Room("normal", "20", "2000000", "2", RentType.MONTH, "free swim"), 4);
-        roomService.put(new Room("pro max", "60", "6000000", "8", RentType.YEAR, "free all"), 5);
+        roomService.put(new Room("vip", "30", "3000000", "4", "day", "free buffet"), 3);
+        roomService.put(new Room("normal", "20", "2000000", "2", "month", "free swim"), 4);
+        roomService.put(new Room("pro max", "60", "6000000", "8", "year", "free all"), 5);
 
-        villaService.put(new Villa("vip", "100", "10000000", "15", RentType.MONTH, "vip", "50", "4"), 3);
-        villaService.put(new Villa("normal", "80", "80000000", "9", RentType.YEAR, "normal", "20", "9"), 5);
-        villaService.put(new Villa("pro max", "140", "20000000", "20", RentType.DAY, "pro vip", "110", "1"), 4);
+        villaService.put(new Villa("vip", "100", "10000000", "15", "day", "vip", "50", "4"), 3);
+        villaService.put(new Villa("normal", "80", "80000000", "9", "month", "normal", "20", "9"), 5);
+        villaService.put(new Villa("pro max", "140", "20000000", "20", "year", "pro vip", "110", "1"), 4);
 
 
     }

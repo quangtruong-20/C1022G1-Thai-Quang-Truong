@@ -1,14 +1,15 @@
 package Day_100_CaseStudy.controllers;
 
 import Day_100_CaseStudy.libs.Regex;
-import Day_100_CaseStudy.models.*;
-import Day_100_CaseStudy.models.enum_model.*;
+import Day_100_CaseStudy.models.Customer;
+import Day_100_CaseStudy.models.Employee;
+import Day_100_CaseStudy.models.Room;
+import Day_100_CaseStudy.models.Villa;
 import Day_100_CaseStudy.services.*;
 import Day_100_CaseStudy.services.impl.*;
 
 import java.io.IOException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -28,7 +29,6 @@ public class FuramaController {
 
 
         Scanner sc = new Scanner(System.in);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
         int select = 0;
         do {
@@ -72,15 +72,11 @@ public class FuramaController {
                                     String name = sc.nextLine();
 
                                     System.out.println("Enter a date (dd/MM/yyyy):  ");
-                                    int date = Integer.parseInt(sc.nextLine());
-                                    int month = Integer.parseInt(sc.nextLine());
-                                    int year = Integer.parseInt(sc.nextLine());
+                                    String date = sc.nextLine();
 
-                                    Date date1 = new Date(date, month, year);
 
                                     System.out.println("Input gender (male/ female) : ");
                                     String gender = sc.nextLine();
-                                    Gender gender1 = Gender.valueOf(gender.toUpperCase());
 
                                     System.out.println("Input identificationNumber: ");
                                     String identificationNumber = sc.nextLine();
@@ -93,16 +89,14 @@ public class FuramaController {
 
                                     System.out.println("Input education (INTERMEDIATE/COLLEGE/UNIVERSITY/POSTGRADUATE): ");
                                     String education = sc.nextLine();
-                                    Education education1 = Education.valueOf(education.toUpperCase());
 
                                     System.out.println("Input position (RECEPTIONIST/SERVER/SPECIALIST/SUPERVISOR/MANAGER/DIRECTOR): ");
                                     String position = sc.nextLine();
-                                    Position position1 = Position.valueOf(position.toUpperCase());
 
                                     System.out.println("Input salary: ");
                                     String salary = sc.nextLine();
 
-                                    Employee employee = new Employee(id, name, date1, gender1, identificationNumber, phoneNumber, email, education1, position1, salary);
+                                    Employee employee = new Employee(id, name, date, gender, identificationNumber, phoneNumber, email, education, position, salary);
 
                                     employeeService.addEmployee(employee);
                                 } catch (IllegalArgumentException | IOException e) {
@@ -129,15 +123,11 @@ public class FuramaController {
                                         String name4 = sc.nextLine();
 
                                         System.out.println("Enter a date (dd/MM/yyyy):  ");
-                                        int date4 = Integer.parseInt(sc.nextLine());
-                                        int month4 = Integer.parseInt(sc.nextLine());
-                                        int year4 = Integer.parseInt(sc.nextLine());
+                                        String date4 = sc.nextLine();
 
-                                        Date date = new Date(date4, month4, year4);
 
                                         System.out.println("Input gender (male/ female) : ");
                                         String gender = sc.nextLine();
-                                        Gender gender4 = Gender.valueOf(gender.toUpperCase());
 
                                         System.out.println("Input identificationNumber: ");
                                         String identificationNumber4 = sc.nextLine();
@@ -150,23 +140,21 @@ public class FuramaController {
 
                                         System.out.println("Input education (INTERMEDIATE/COLLEGE/UNIVERSITY/POSTGRADUATE): ");
                                         String education4 = sc.nextLine();
-                                        Education education = Education.valueOf(education4.toUpperCase());
 
                                         System.out.println("Input position (RECEPTIONIST/SERVER/SPECIALIST/SUPERVISOR/MANAGER/DIRECTOR): ");
                                         String position = sc.nextLine();
-                                        Position position4 = Position.valueOf(position.toUpperCase());
 
                                         System.out.println("Input salary: ");
                                         String salary4 = sc.nextLine();
 
                                         c.setName(name4);
-                                        c.setEducation(education);
+                                        c.setEducation(education4);
                                         c.setEmployeeId(id4);
-                                        c.setPosition(position4);
+                                        c.setPosition(position);
                                         c.setSalary(salary4);
-                                        c.setBirthDate(date);
+                                        c.setBirthDate(date4);
                                         c.setEmail(email4);
-                                        c.setGender(gender4);
+                                        c.setGender(gender);
                                         c.setIdentificationNumber(identificationNumber4);
                                         c.setPhoneNumber(phoneNumber4);
 
@@ -213,15 +201,11 @@ public class FuramaController {
                                     String name = sc.nextLine();
 
                                     System.out.println("Enter a date (dd/MM/yyyy):  ");
-                                    int date = Integer.parseInt(sc.nextLine());
-                                    int month = Integer.parseInt(sc.nextLine());
-                                    int year = Integer.parseInt(sc.nextLine());
+                                    String date = sc.nextLine();
 
-                                    Date date1 = new Date(date, month, year);
 
                                     System.out.println("Input gender (male/ female) : ");
                                     String gender = sc.nextLine();
-                                    Gender gender1 = Gender.valueOf(gender.toUpperCase());
 
                                     System.out.println("Input identificationNumber: ");
                                     String identificationNumber = sc.nextLine();
@@ -234,12 +218,11 @@ public class FuramaController {
 
                                     System.out.println("Input type of customer (DIAMOND/PLATINIUM/GOLD/SILVER/MEMBER): ");
                                     String type = sc.nextLine();
-                                    TypeOfCustomer type1 = TypeOfCustomer.valueOf(type.toUpperCase());
 
                                     System.out.println("Input address: ");
                                     String address = sc.nextLine();
 
-                                    Customer customer = new Customer(id, name, date1, gender1, identificationNumber, address, phoneNumber, email, type1);
+                                    Customer customer = new Customer(id, name, date, gender, identificationNumber, address, phoneNumber, email, type);
 
                                     customerService.addNewCustomer(customer);
                                 } catch (IllegalArgumentException e) {
@@ -261,15 +244,11 @@ public class FuramaController {
                                         String name4 = sc.nextLine();
 
                                         System.out.println("Enter a date (dd/MM/yyyy):  ");
-                                        int date4 = Integer.parseInt(sc.nextLine());
-                                        int month4 = Integer.parseInt(sc.nextLine());
-                                        int year4 = Integer.parseInt(sc.nextLine());
+                                        String date4 = sc.nextLine();
 
-                                        Date date = new Date(date4, month4, year4);
 
                                         System.out.println("Input gender (male/ female) : ");
                                         String gender = sc.nextLine();
-                                        Gender gender4 = Gender.valueOf(gender.toUpperCase());
 
                                         System.out.println("Input identificationNumber: ");
                                         String identificationNumber4 = sc.nextLine();
@@ -283,17 +262,17 @@ public class FuramaController {
 
                                         System.out.println("Input type of customer (DIAMOND/PLATINIUM/GOLD/SILVER/MEMBER): ");
                                         String type = sc.nextLine();
-                                        TypeOfCustomer type1 = TypeOfCustomer.valueOf(type.toUpperCase());
+
 
                                         System.out.println("Input address: ");
                                         String address = sc.nextLine();
 
                                         c.setName(name4);
-                                        c.setTypeOfCustomer(type1);
+                                        c.setTypeOfCustomer(type);
                                         c.setCustomerId(id4);
-                                        c.setBirthDate(date);
+                                        c.setBirthDate(date4);
                                         c.setEmail(email4);
-                                        c.setGender(gender4);
+                                        c.setGender(gender);
                                         c.setIdentificationNumber(identificationNumber4);
                                         c.setPhoneNumber(phoneNumber4);
                                         c.setAddress(address);
@@ -370,7 +349,6 @@ public class FuramaController {
                                             }
                                             System.out.println("Input ren type: ");
                                             String type = sc.nextLine();
-                                            RentType type1 = RentType.valueOf(type.toUpperCase());
                                             while (!Regex.checkNameService(type)) {
                                                 System.out.println("type is valid! Enter type again: (exam: Villa)");
                                                 type = sc.nextLine();
@@ -402,7 +380,7 @@ public class FuramaController {
                                             Integer numberOfUses = Integer.parseInt(sc.nextLine());
 
 
-                                            Villa villa = new Villa(name, area, price, maxCapacity, type1, roomStandard, swimmingPoolArea, numberOfFloors);
+                                            Villa villa = new Villa(name, area, price, maxCapacity, type, roomStandard, swimmingPoolArea, numberOfFloors);
                                             facilityService.addNewVilla(villa, numberOfUses);
 
                                             break;
@@ -437,7 +415,6 @@ public class FuramaController {
 
                                             System.out.println("Input ren type: ");
                                             String type3 = sc.nextLine();
-                                            RentType type4 = RentType.valueOf(type3.toUpperCase());
                                             while (!Regex.checkNameService(type3)) {
                                                 System.out.println("type is valid! Enter type again: (exam: Villa)");
                                                 type3 = sc.nextLine();
@@ -451,7 +428,7 @@ public class FuramaController {
                                             Integer numberOfUses1 = Integer.parseInt(sc.nextLine());
 
 
-                                            Room room = new Room(name1, area1, price1, maxCapacity1, type4, freeServiceIncluded);
+                                            Room room = new Room(name1, area1, price1, maxCapacity1, type3, freeServiceIncluded);
                                             facilityService.addNewRoom(room, numberOfUses1);
 
                                             break;

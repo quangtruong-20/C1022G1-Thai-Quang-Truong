@@ -1,6 +1,5 @@
 package Day_100_CaseStudy.models;
 
-import Day_100_CaseStudy.models.enum_model.RentType;
 
 public class Facility {
 
@@ -8,10 +7,10 @@ public class Facility {
         private String area;
         private String price;
         private String maxCapacity;
-        private RentType rentType;
+        private String rentType;
 
 
-        public Facility(String serviceName, String area, String price, String maxCapacity, RentType rentType) {
+        public Facility(String serviceName, String area, String price, String maxCapacity, String rentType) {
             this.serviceName = serviceName;
             this.area = area;
             this.price = price;
@@ -51,11 +50,11 @@ public class Facility {
             this.maxCapacity = maxCapacity;
         }
 
-        public RentType getRentType() {
+        public String getRentType() {
             return rentType;
         }
 
-        public void setRentType(RentType rentType) {
+        public void setRentType(String rentType) {
             this.rentType = rentType;
         }
 

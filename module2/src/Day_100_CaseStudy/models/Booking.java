@@ -3,8 +3,8 @@ package Day_100_CaseStudy.models;
 
 public class Booking  {
     private String bookingId;
-    private Date startDate;
-    private Date endDate;
+    private String startDate;
+    private String endDate;
     private String customerId;  // phần Customer
     private String serviceName; // phần Facility
 
@@ -12,7 +12,7 @@ public class Booking  {
     public Booking() {
     }
 
-    public Booking(String bookingId, Date startDate, Date endDate, String customerId, String serviceName) {
+    public Booking(String bookingId, String startDate, String endDate, String customerId, String serviceName) {
         this.bookingId = bookingId;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -28,19 +28,19 @@ public class Booking  {
         this.bookingId = bookingId;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public Date getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(Date endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 

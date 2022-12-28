@@ -1,10 +1,7 @@
 package Day_100_CaseStudy.services.impl;
 
-import Day_100_CaseStudy.models.Date;
 import Day_100_CaseStudy.models.Employee;
-import Day_100_CaseStudy.models.enum_model.Education;
-import Day_100_CaseStudy.models.enum_model.Gender;
-import Day_100_CaseStudy.models.enum_model.Position;
+
 import Day_100_CaseStudy.services.IEmployeeService;
 import Day_100_CaseStudy.utils.EmployeeFile;
 
@@ -17,9 +14,9 @@ public class EmployeeService implements IEmployeeService, Serializable {
     public static List<Employee> employeeList = new ArrayList<>();
 
     static {
-        employeeList.add(new Employee("1", "Thái Quang Trường", new Date(1, 9, 2000), Gender.MALE, "1234335345", "0946197716", "truongtq@gmail.com", Education.UNIVERSITY, Position.MANAGER, "50000000"));
-        employeeList.add(new Employee("2", "Võ Ngọc Huân", new Date(2000, 3, 25), Gender.MALE, "345367567", "092345652", "ngochuana@gmail.com", Education.COLLEGE, Position.DIRECTOR, "10000000"));
-        employeeList.add(new Employee("3", "Nguyễn Văn Khải", new Date(2000, 3, 30), Gender.MALE, "7897345123", "09453568778", "vankhai@gmail.com", Education.INTERMEDIATE, Position.RECEPTIONIST, "11000000"));
+        employeeList.add(new Employee("1", "Thái Quang Trường", "new Date(1, 9, 2000)","male", "1234335345", "0946197716", "truongtq@gmail.com", "UNIVERSITY", "MANAGER", "50000000"));
+        employeeList.add(new Employee("2", "Võ Ngọc Huân", "new Date(2000, 3, 25)", "male", "345367567", "092345652", "ngochuana@gmail.com", "COLLEGE","DIRECTOR", "10000000"));
+        employeeList.add(new Employee("3", "Nguyễn Lê Văn Khải", "new Date(2000, 3, 30)","male", "7897345123", "09453568778", "vankhai@gmail.com", "INTERMEDIATE", "RECEPTIONIST", "11000000"));
         try {
             EmployeeFile.writeEmployeeList(employeeList);
         } catch (IOException e) {

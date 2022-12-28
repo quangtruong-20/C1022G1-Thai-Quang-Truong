@@ -1,20 +1,18 @@
 package Day_100_CaseStudy.models;
 
 
-import Day_100_CaseStudy.models.enum_model.Education;
-import Day_100_CaseStudy.models.enum_model.Gender;
-import Day_100_CaseStudy.models.enum_model.Position;
+
 
 public class Employee extends Person {
     private String employeeId;
-    private Education education;
-    private Position position;
+    private String education;
+    private String position;
     private String salary;
 
 
-    public Employee(String employeeId, String name, Date birthDate, Gender gender
-            , String identificationNumber, String phoneNumber, String email, Education education,
-                    Position position, String salary) {
+    public Employee(String employeeId, String name, String birthDate, String gender
+            , String identificationNumber, String phoneNumber, String email, String education,
+                    String position, String salary) {
         super(identificationNumber, name, birthDate, gender, phoneNumber, email);
         this.employeeId = employeeId;
         this.education = education;
@@ -31,19 +29,19 @@ public class Employee extends Person {
         this.employeeId = employeeId;
     }
 
-    public Education getEducation() {
+    public String getEducation() {
         return education;
     }
 
-    public void setEducation(Education education) {
+    public void setEducation(String education) {
         this.education = education;
     }
 
-    public Position getPosition() {
+    public String getPosition() {
         return position;
     }
 
-    public void setPosition(Position position) {
+    public void setPosition(String position) {
         this.position = position;
     }
 

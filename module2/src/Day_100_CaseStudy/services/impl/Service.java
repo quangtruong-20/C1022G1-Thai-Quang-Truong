@@ -4,8 +4,4 @@ import Day_100_CaseStudy.services.IService;
 
 public class Service  implements IService {
 
-
-
-
-
 }

@@ -1,6 +1,5 @@
 package Day_100_CaseStudy.models;
 
-import Day_100_CaseStudy.models.enum_model.RentType;
 
 public class Room extends Facility {
     private String FreeServiceIncluded;
@@ -13,7 +12,7 @@ public class Room extends Facility {
         FreeServiceIncluded = freeServiceIncluded;
     }
 
-    public Room(String name, String area, String price, String maxCapacity, RentType rentType ,
+    public Room(String name, String area, String price, String maxCapacity, String rentType ,
                 String freeServiceIncluded) {
         super(name, area, price, maxCapacity, rentType);
         this.FreeServiceIncluded = freeServiceIncluded;

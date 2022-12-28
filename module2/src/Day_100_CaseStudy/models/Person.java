@@ -1,22 +1,18 @@
 package Day_100_CaseStudy.models;
 
 
-import Day_100_CaseStudy.models.enum_model.Gender;
 
 import java.io.Serializable;
 
 public abstract class Person implements Serializable {
     private String identificationNumber;
     private String name;
-    private Date birthDate;
-    private Gender gender;
+    private String birthDate;
+    private String gender;
     private String phoneNumber;
     private String email;
 
-    public Person() {
-    }
-
-    public Person(String identificationNumber, String name, Date birthDate, Gender gender, String phoneNumber, String email) {
+    public Person(String identificationNumber, String name, String birthDate, String gender, String phoneNumber, String email) {
         this.identificationNumber = identificationNumber;
         this.name = name;
         this.birthDate = birthDate;
@@ -33,19 +29,19 @@ public abstract class Person implements Serializable {
         this.name = name;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
-    public Gender getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

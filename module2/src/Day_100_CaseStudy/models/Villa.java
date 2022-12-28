@@ -1,13 +1,12 @@
 package Day_100_CaseStudy.models;
 
-import Day_100_CaseStudy.models.enum_model.RentType;
 
 public class Villa extends Facility {
         private String roomStandard;
         private String swimmingPoolArea;
         private String numberOfFloors;
 
-    public Villa(String serviceName, String area, String price, String maxCapacity, RentType rentType,
+    public Villa(String serviceName, String area, String price, String maxCapacity, String rentType,
                  String roomStandard, String swimmingPoolArea, String numberOfFloors) {
         super(serviceName, area, price, maxCapacity, rentType);
         this.roomStandard = roomStandard;
