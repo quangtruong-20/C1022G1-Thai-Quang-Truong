@@ -5,8 +5,8 @@ public class Booking  {
     private String bookingId;
     private String startDate;
     private String endDate;
-    private String customerId;  // phần Customer
-    private String serviceName; // phần Facility
+    private String customerId;
+    private String serviceName;
 
 
     public Booking() {

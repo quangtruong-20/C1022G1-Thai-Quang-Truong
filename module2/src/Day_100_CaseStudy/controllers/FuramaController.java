@@ -9,7 +9,6 @@ import Day_100_CaseStudy.services.*;
 import Day_100_CaseStudy.services.impl.*;
 
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -18,14 +17,13 @@ public class FuramaController {
     private static final ICustomerService customerService = new CustomerService();
     private static final IBookingService bookingService = new BookingService();
     private static final IFacilityService facilityService = new FacilityService();
-    private static final IService service = new Service();
 
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws  IOException, ClassNotFoundException {
         displayMainMenu();
     }
 
-    public static void displayMainMenu() throws ParseException {
+    public static void displayMainMenu() throws IOException, ClassNotFoundException {
 
 
         Scanner sc = new Scanner(System.in);
@@ -70,10 +68,8 @@ public class FuramaController {
                                     String id = sc.nextLine();
                                     System.out.println("Input name: ");
                                     String name = sc.nextLine();
-
                                     System.out.println("Enter a date (dd/MM/yyyy):  ");
                                     String date = sc.nextLine();
-
 
                                     System.out.println("Input gender (male/ female) : ");
                                     String gender = sc.nextLine();
@@ -309,70 +305,88 @@ public class FuramaController {
 
                         switch (select3) {
                             case 1:
+                                try {
                                 facilityService.displayFacility();
+
+                                }catch (Exception e){
+                                    System.out.println("Enter again");
+                                    sc.nextLine();
+                                }
                                 break;
                             case 2:
+
+
+
                                 int select9 = 0;
                                 do {
+
+
+
+
                                     System.out.println("1.Add New Villa");
                                     System.out.println("2.Add New Room");
                                     System.out.println("3.Back to menu");
                                     select9 = Integer.parseInt(sc.nextLine());
                                     switch (select9) {
-                                        case 1:
 
-                                            System.out.println("Input name: ");
+                                        case 1:
+                                        try {
+
+
+                                            System.out.println("Input name (exam: Villa) : ");
                                             String name = sc.nextLine();
+
                                             while (!Regex.checkNameService(name)) {
                                                 System.out.println("Name is valid! Enter area again: (exam: Villa)");
                                                 name = sc.nextLine();
                                             }
 
-                                            System.out.println("Input area : ");
+                                            System.out.println("Input area (exam: so thuc > 30m2) : ");
                                             String area = sc.nextLine();
                                             while (!Regex.checkArea(area)) {
-                                                System.out.println("Area is valid! Enter area again: (exam: so thuc > 30)");
+                                                System.out.println("Area is valid! Enter area again: (exam: so thuc > 30m2)");
                                                 area = sc.nextLine();
                                             }
-                                            System.out.println("Input price : ");
+
+                                            System.out.println("Input price (exam: > 0): ");
                                             String price = sc.nextLine();
                                             while (!Regex.checkPrice(price)) {
                                                 System.out.println("Price is valid! Enter area again: (exam: > 0)");
                                                 price = sc.nextLine();
                                             }
-                                            System.out.println("Input max capacity: ");
-                                            String maxCapacity = sc.nextLine();
 
+                                            System.out.println("Input max capacity (exam: >0 & < 20): ");
+                                            String maxCapacity = sc.nextLine();
                                             while (!Regex.checkMaxOfPeople(maxCapacity)) {
                                                 System.out.println("Input is valid! Enter again: (exam: >0 & < 20)");
                                                 maxCapacity = sc.nextLine();
                                             }
-                                            System.out.println("Input ren type: ");
+                                            System.out.println("Input ren type: (exam: Villa)");
                                             String type = sc.nextLine();
                                             while (!Regex.checkNameService(type)) {
                                                 System.out.println("type is valid! Enter type again: (exam: Villa)");
                                                 type = sc.nextLine();
                                             }
 
-                                            System.out.println("Input roomStandard: ");
+                                            System.out.println("Input roomStandard: (exam: Room)");
                                             String roomStandard = sc.nextLine();
                                             while (!Regex.checkNameService(roomStandard)) {
                                                 System.out.println("Iput is valid! Enter again: (exam: Room)");
                                                 roomStandard = sc.nextLine();
                                             }
 
-                                            System.out.println("Input swimmingPoolArea: ");
+                                            System.out.println("Input swimmingPoolArea: (exam: so thuc > 30m2)");
                                             String swimmingPoolArea = sc.nextLine();
                                             while (!Regex.checkArea(swimmingPoolArea)) {
-                                                System.out.println("Area is valid! Enter area again: (exam: so thuc > 30)");
+                                                System.out.println("Area is valid! Enter area again: (exam: so thuc > 30m2)");
                                                 swimmingPoolArea = sc.nextLine();
                                             }
 
 
-                                            System.out.println("Input numberOfFloors: ");
+                                            System.out.println("Input numberOfFloors: (exam: so nguyen duong )");
                                             String numberOfFloors = sc.nextLine();
                                             while (!Regex.checkNumberOfFloor(numberOfFloors)) {
-                                                System.out.println("Number is valid! Enter number again: (exam: > 0)");
+                                                System.out.println("Number is valid! Enter number again: (exam: so nguyen duong )");
                                                 numberOfFloors = sc.nextLine();
                                             }
 
@@ -382,55 +396,64 @@ public class FuramaController {
 
                                             Villa villa = new Villa(name, area, price, maxCapacity, type, roomStandard, swimmingPoolArea, numberOfFloors);
                                             facilityService.addNewVilla(villa, numberOfUses);
+                                        }catch (Exception e){
+                                            System.out.println("Input again");
+                                        }
+
 
                                             break;
                                         case 2:
-                                            System.out.println("Input name: ");
-                                            String name1 = sc.nextLine();
+                                            try {
 
-                                            while (!Regex.checkNameService(name1)) {
-                                                System.out.println("Name is valid! Enter area again: (exam: Villa)");
-                                                name1 = sc.nextLine();
+
+                                                System.out.println("Input name (exam: Villa) : ");
+                                                String name1 = sc.nextLine();
+
+                                                while (!Regex.checkNameService(name1)) {
+                                                    System.out.println("Name is valid! Enter area again: (exam: Villa)");
+                                                    name1 = sc.nextLine();
+                                                }
+
+                                                System.out.println("Input area (exam: so thuc > 30): ");
+                                                String area1 = sc.nextLine();
+                                                while (!Regex.checkArea(area1)) {
+                                                    System.out.println("Area is valid! Enter area again: (exam: so thuc > 30)");
+                                                    area1 = sc.nextLine();
+                                                }
+                                                System.out.println("Input price (exam: > 0): ");
+                                                String price1 = sc.nextLine();
+                                                while (!Regex.checkPrice(price1)) {
+                                                    System.out.println("Price is valid! Enter area again: (exam: > 0)");
+                                                    price1 = sc.nextLine();
+                                                }
+
+                                                System.out.println("Input max capacity (exam: >0 & < 20): ");
+                                                String maxCapacity1 = sc.nextLine();
+                                                while (!Regex.checkMaxOfPeople(maxCapacity1)) {
+                                                    System.out.println("Input is valid! Enter again: (exam: >0 & < 20)");
+                                                    maxCapacity1 = sc.nextLine();
+                                                }
+
+                                                System.out.println("Input ren type (exam: Villa): ");
+                                                String type3 = sc.nextLine();
+                                                while (!Regex.checkNameService(type3)) {
+                                                    System.out.println("type is valid! Enter type again: (exam: Villa)");
+                                                    type3 = sc.nextLine();
+                                                }
+
+                                                System.out.println("Input freeServiceIncluded: ");
+                                                String freeServiceIncluded = sc.nextLine();
+
+
+                                                System.out.println("Input number of uses: ");
+                                                Integer numberOfUses1 = Integer.parseInt(sc.nextLine());
+
+
+                                                Room room = new Room(name1, area1, price1, maxCapacity1, type3, freeServiceIncluded);
+                                                facilityService.addNewRoom(room, numberOfUses1);
+                                            }catch (Exception e){
+                                                System.out.println("Input again ");
                                             }
-
-                                            System.out.println("Input area : ");
-                                            String area1 = sc.nextLine();
-                                            while (!Regex.checkArea(area1)) {
-                                                System.out.println("Area is valid! Enter area again: (exam: so thuc > 30)");
-                                                area1 = sc.nextLine();
-                                            }
-                                            System.out.println("Input price : ");
-                                            String price1 = sc.nextLine();
-                                            while (!Regex.checkPrice(price1)) {
-                                                System.out.println("Price is valid! Enter area again: (exam: > 0)");
-                                                price1 = sc.nextLine();
-                                            }
-
-                                            System.out.println("Input max capacity: ");
-                                            String maxCapacity1 = sc.nextLine();
-                                            while (!Regex.checkMaxOfPeople(maxCapacity1)) {
-                                                System.out.println("Input is valid! Enter again: (exam: >0 & < 20)");
-                                                maxCapacity1 = sc.nextLine();
-                                            }
-
-                                            System.out.println("Input ren type: ");
-                                            String type3 = sc.nextLine();
-                                            while (!Regex.checkNameService(type3)) {
-                                                System.out.println("type is valid! Enter type again: (exam: Villa)");
-                                                type3 = sc.nextLine();
-                                            }
-
-                                            System.out.println("Input freeServiceIncluded: ");
-                                            String freeServiceIncluded = sc.nextLine();
-
-
-                                            System.out.println("Input number of uses: ");
-                                            Integer numberOfUses1 = Integer.parseInt(sc.nextLine());
-
-
-                                            Room room = new Room(name1, area1, price1, maxCapacity1, type3, freeServiceIncluded);
-                                            facilityService.addNewRoom(room, numberOfUses1);
-
                                             break;
                                         case 3:
                                             displayMainMenu();

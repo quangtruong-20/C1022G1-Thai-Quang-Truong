@@ -2,11 +2,13 @@ package Day_100_CaseStudy.services;
 
 import Day_100_CaseStudy.models.Customer;
 
-public interface ICustomerService extends IService {
+import java.io.IOException;
 
-    void displayCustomer();
+public interface ICustomerService {
 
-    void addNewCustomer(Customer customer);
+    void displayCustomer() throws IOException;
+
+    void addNewCustomer(Customer customer) throws IOException;
 
     Customer findCustomerById(String id);
     void updateCustomer(Customer customer);

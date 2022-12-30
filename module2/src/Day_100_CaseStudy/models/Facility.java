@@ -1,7 +1,9 @@
 package Day_100_CaseStudy.models;
 
 
-public class Facility {
+import java.io.Serializable;
+
+public class Facility implements Serializable {
 
          private String serviceName;
         private String area;

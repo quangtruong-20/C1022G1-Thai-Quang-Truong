@@ -2,8 +2,7 @@ package Day_100_CaseStudy.models;
 
 
 
-
-public class Employee extends Person {
+public class Employee extends Person  {
     private String employeeId;
     private String education;
     private String position;
@@ -20,12 +19,11 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-
     public String getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(String    employeeId) {
+    public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
 

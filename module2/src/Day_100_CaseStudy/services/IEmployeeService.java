@@ -4,7 +4,7 @@ import Day_100_CaseStudy.models.Employee;
 
 import java.io.IOException;
 
-public interface IEmployeeService extends IService {
+public interface IEmployeeService {
     void displayEmployee();
      void addEmployee(Employee employee ) throws IOException;
 

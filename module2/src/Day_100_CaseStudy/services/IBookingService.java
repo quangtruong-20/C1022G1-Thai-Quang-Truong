@@ -1,4 +1,4 @@
 package Day_100_CaseStudy.services;
 
-public interface IBookingService extends IService {
+public interface IBookingService {
 }
