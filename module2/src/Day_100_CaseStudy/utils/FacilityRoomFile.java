@@ -29,9 +29,13 @@ public class FacilityRoomFile {
                 String maxCapacity = temp[3];
                 String rentType = temp[4];
                 String freeServiceIncluded = temp[5];
+
                 int numberOfUses = Integer.parseInt(temp[6]);
+
                 room = new Room(name,area,price,maxCapacity,rentType,freeServiceIncluded);
                 roomList.put(room,numberOfUses);
+
+
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

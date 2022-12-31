@@ -11,22 +11,22 @@ import java.util.Map;
 
 
 public class FacilityService implements IFacilityService {
-    public static Map<Room, Integer> roomService = new LinkedHashMap<Room, Integer>();
-    public static Map<Villa, Integer> villaService = new LinkedHashMap<Villa, Integer>();
+    public static Map<Room, Integer> roomService = new LinkedHashMap<>();
+    public static Map<Villa, Integer> villaService = new LinkedHashMap<>();
 
 
 
 
     @Override
     public void displayFacility() {
-        Map<Room, Integer> roomService = FacilityRoomFile.readRoom();
-        Map<Villa, Integer> villaService = FacilityVillaFile.readVilla();
-        for (Map.Entry<Room, Integer> m : roomService.entrySet()) {
+        Map<Room, Integer> roomService1 = FacilityRoomFile.readRoom();
+        Map<Villa, Integer> villaService1 = FacilityVillaFile.readVilla();
+        for (Map.Entry<Room, Integer> m : roomService1.entrySet()) {
 
             System.out.println(m.getKey() + " - Number of Uses " + m.getValue());
 
         }
-        for (Map.Entry<Villa, Integer> n : villaService.entrySet()
+        for (Map.Entry<Villa, Integer> n : villaService1.entrySet()
         ) {
             System.out.println(n.getKey() + " - Number of Uses " + n.getValue());
         }
@@ -51,16 +51,16 @@ public class FacilityService implements IFacilityService {
 
     @Override
     public void displayFacilityMaintain() {
-//        Map<Room, Integer> roomService1 = FacilityRoomFile.readRoom();
-//        Map<Villa, Integer> villaService1 = FacilityVillaFile.readVilla();
+        Map<Room, Integer> roomService1 = FacilityRoomFile.readRoom();
+        Map<Villa, Integer> villaService1 = FacilityVillaFile.readVilla();
 
-        for (Map.Entry<Room, Integer> m : roomService.entrySet()
+        for (Map.Entry<Room, Integer> m : roomService1.entrySet()
         )
             if (m.getValue() >= 5) {
                 System.out.println(m.getKey() + " - Number of Uses " + m.getValue());
             }
 
-        for (Map.Entry<Villa, Integer> n : villaService.entrySet())
+        for (Map.Entry<Villa, Integer> n : villaService1.entrySet())
             if (n.getValue() >= 5)
                 System.out.println(n.getKey() + " - Number of Uses " + n.getValue());
 

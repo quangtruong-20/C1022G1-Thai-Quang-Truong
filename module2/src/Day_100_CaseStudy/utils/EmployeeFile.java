@@ -79,6 +79,7 @@ public class EmployeeFile {
                         + e.getGender() + "," + e.getIdentificationNumber() + "," + e.getPhoneNumber() + ","
                         + e.getEmail() + "," + e.getEducation() + "," + e.getPosition() + ","
                         + e.getSalary()+"\n");
+                buff.newLine();
             }
 
             buff.close();

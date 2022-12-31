@@ -60,6 +60,7 @@ public class CustomerFile {
                         + e.getGender() + "," + e.getIdentificationNumber() + "," + e.getAddress() + "," + e.getPhoneNumber() + ","
                         + e.getEmail() + ","
                         + e.getTypeOfCustomer());
+                buff.newLine();
             }
 
             buff.close();

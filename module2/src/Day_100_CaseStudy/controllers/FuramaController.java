@@ -305,13 +305,10 @@ public class FuramaController {
 
                         switch (select3) {
                             case 1:
-                                try {
+
                                 facilityService.displayFacility();
 
-                                }catch (Exception e){
-                                    System.out.println("Enter again");
-                                    sc.nextLine();
-                                }
+
                                 break;
                             case 2:
 
