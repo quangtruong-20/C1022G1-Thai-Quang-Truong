@@ -62,13 +62,18 @@ public class Facility implements Serializable {
 
     @Override
     public String toString() {
-        return "Facility{" +
-                "name='" + serviceName + '\'' +
-                ", area=" + area +
-                ", price=" + price +
-                ", maxCapacity=" + maxCapacity +
-                ", rentType=" + rentType +
-                '}';
+        return
+                "serviceName='" + serviceName + '\'' +
+                ", area='" + area + '\'' +
+                ", price='" + price + '\'' +
+                ", maxCapacity='" + maxCapacity + '\'' +
+                ", rentType='" + rentType + '\''
+                ;
+    }
+
+    public String toStringCSV() {
+        return this.serviceName+","+this.area+","+this.price+","+this.maxCapacity+","+
+                this.rentType;
     }
 }
 

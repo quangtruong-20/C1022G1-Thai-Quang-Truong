@@ -49,12 +49,12 @@ public class Customer extends Person implements Serializable {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "customerId=" + customerId +  ", name= "+getName() +" , phoneNumber= "
-                + getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()
-                + ", identityNumber: "+ getIdentificationNumber()+
-                ", typeOfCustomer=" + typeOfCustomer +
+        return
+                "customerId='" + customerId + '\'' +
+                ", typeOfCustomer='" + typeOfCustomer + '\'' +
                 ", address='" + address + '\'' +
-                "} " ;
+                super.toString();
     }
+
+
 }

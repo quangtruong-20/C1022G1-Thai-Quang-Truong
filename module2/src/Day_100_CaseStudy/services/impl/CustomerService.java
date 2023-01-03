@@ -52,7 +52,6 @@ public class CustomerService implements ICustomerService {
         for (int i = 0; i < customerList1.size(); i++) {
             if (customer.getCustomerId().equals(customerList1.get(i).getCustomerId())) {
                 customerList1.set(i, customer);
-
             break;
             }
         }

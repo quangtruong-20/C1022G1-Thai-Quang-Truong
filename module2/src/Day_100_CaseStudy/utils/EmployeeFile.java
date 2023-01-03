@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeFile {
-    private static final String EMPLOYEE_PATH = "D:\\codegym\\module2\\src\\Day_100_CaseStudy\\data\\employee.csv";
+    private static final String EMPLOYEE_PATH = "src\\Day_100_CaseStudy\\data\\employee.csv";
 
     public static List<Employee> readEmployee() {
         List<Employee> employeeList = new ArrayList<>();

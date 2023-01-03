@@ -53,14 +53,15 @@ public class Employee extends Person  {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "employeeId='" + employeeId + '\'' + ", name= "+getName() +" , phoneNumber= "
-                + getPhoneNumber() +" ,dateOfBirth: "+ getBirthDate() +", gender: " + getGender()
-                + ", identityNumber: "+ getIdentificationNumber()+
-                ", education=" + education +
-                ", position=" + position +
-                ", salary=" + salary +
-                '}';
+        return
+                "employeeId='" + employeeId + '\'' +
+                ", education='" + education + '\'' +
+                ", position='" + position + '\'' +
+                ", salary='" + salary + '\'' +
+                 super.toString();
     }
+
+
+
 }
 

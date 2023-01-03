@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CustomerFile {
-    private static final String CUSTOMER_PATH = "D:\\codegym\\module2\\src\\Day_100_CaseStudy\\data\\customer.csv";
+    private static final String CUSTOMER_PATH = "src\\Day_100_CaseStudy\\data\\customer.csv";
 
     public static List<Customer> readCustomer() {
         List<Customer> customerList = new LinkedList<>();

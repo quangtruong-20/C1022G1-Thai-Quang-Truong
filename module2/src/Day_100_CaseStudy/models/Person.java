@@ -69,13 +69,16 @@ public abstract class Person implements Serializable {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", birthDate=" + birthDate +
+        return
+                "identificationNumber='" + identificationNumber + '\'' +
+                ", name='" + name + '\'' +
+                ", birthDate='" + birthDate + '\'' +
                 ", gender='" + gender + '\'' +
-                ", identificationNumber=" + identificationNumber +
-                ", phoneNumber=" + phoneNumber +
-                ", email='" + email + '\'' +
-                '}';
-}
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\''
+                ;
     }
+
+
+
+}

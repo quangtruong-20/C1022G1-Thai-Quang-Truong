@@ -7,9 +7,7 @@ import java.io.IOException;
 
 public interface IFacilityService {
             void displayFacility() throws IOException, ClassNotFoundException;
-
             void addNewVilla(Villa villa, Integer time);
             void addNewRoom(Room room, Integer time);
-
             void displayFacilityMaintain();
 }

@@ -1,1 +1,1 @@
-Room{ Name='Room', Area=32, Costs=132, maximumNumberOfPeople=12, rentalType='Buffer', FreeServiceIncluded='Gym'}, Number of Uses: 5
+Room,31,2323,12,Month,Club,6

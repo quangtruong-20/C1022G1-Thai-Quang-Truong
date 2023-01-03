@@ -12,5 +12,5 @@ public interface IEmployeeService {
     Employee findById(String id);
     void updateEmployee(Employee employee) throws IOException;
 
-    void  deleteById(String id);
+    void  deleteById(String id) throws NotFoundException;
 }
