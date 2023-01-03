@@ -1,4 +1,4 @@
-package Day_100_CaseStudy.services.impl;
+package Day_100_CaseStudy.libs;
 
 public class NotFoundException extends Exception {
     public NotFoundException(String e){

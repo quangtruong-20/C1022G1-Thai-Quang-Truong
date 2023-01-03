@@ -22,11 +22,11 @@ public class FuramaController {
     private static final IFacilityService facilityService = new FacilityService();
 
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException, NotFoundException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         displayMainMenu();
     }
 
-    public static void displayMainMenu() throws IOException, ClassNotFoundException, NotFoundException {
+    public static void displayMainMenu() throws IOException, ClassNotFoundException {
 
 
         Scanner sc = new Scanner(System.in);
