@@ -2,7 +2,7 @@ package Day_2_Arrays_And_Loop.bai_tap;
 
 import java.util.Scanner;
 
-public class InputValue {
+public class InputValue  {
     public static void main(String[] args) {
         int[] arr = {10, 4, 6, 7, 8, 0, 0, 0, 0, 0};
         Scanner scanner = new Scanner(System.in);

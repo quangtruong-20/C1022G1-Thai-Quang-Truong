@@ -47,8 +47,8 @@ public class Villa extends Facility {
                 + super.toString();
     }
 
-    @Override
-    public String toStringCSV() {
-        return super.toStringCSV() + "," +this.roomStandard+","+this.swimmingPoolArea+","+this.numberOfFloors;
+
+    public String toStringCSVVilla() {
+        return super.toStringCSV1() + "," +this.roomStandard+","+this.swimmingPoolArea+","+this.numberOfFloors;
     }
 }

@@ -19,7 +19,7 @@ public class SoNguyenToDauTien {
                 }
             }
             if (count1 == 2) {
-                System.out.println(n + " ");
+                System.out.print(n + " ");
                 count++;
             }
             n++;

@@ -57,7 +57,7 @@ public class FacilityVillaFile {
           fileWriter = new FileWriter(VILLA_PATH);
            buff = new BufferedWriter(fileWriter);
             for (Map.Entry<Villa, Integer> entry : villa.entrySet()) {
-                buff.write(entry.getKey().toStringCSV() + "," + entry.getValue());
+                buff.write(entry.getKey().toStringCSVVilla() + "," + entry.getValue());
                 buff.newLine();
             }
 

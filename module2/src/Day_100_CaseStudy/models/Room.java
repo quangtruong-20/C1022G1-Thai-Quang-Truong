@@ -25,8 +25,8 @@ public class Room extends Facility {
               super.toString();
     }
 
-    @Override
-    public String toStringCSV() {
-        return super.toStringCSV() + "," + this.freeServiceIncluded;
+
+    public String toStringCSVRoom() {
+        return super.toStringCSV1() + "," + this.freeServiceIncluded;
     }
 }

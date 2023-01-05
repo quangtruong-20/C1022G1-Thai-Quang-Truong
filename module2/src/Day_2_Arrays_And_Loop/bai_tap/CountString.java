@@ -4,6 +4,7 @@ public class CountString {
     public static void main(String[] args) {
         String txt = "ABCDEFGHIJKLMMOPQRSMUVWXYZ";
         char[] arr = txt.toCharArray(); //chuyển string thành array
+
         char characters = 'M';
         int count = 0 ;
 

@@ -54,7 +54,7 @@ public class FacilityRoomFile {
        fileWriter = new FileWriter(ROOM_PATH);
             buff = new BufferedWriter(fileWriter);
             for (Map.Entry<Room,Integer> entry : room.entrySet()) {
-                buff.write(entry.getKey().toStringCSV()+"," + entry.getValue());
+                buff.write(entry.getKey().toStringCSVRoom()+"," + entry.getValue());
                 buff.newLine();
             }
 

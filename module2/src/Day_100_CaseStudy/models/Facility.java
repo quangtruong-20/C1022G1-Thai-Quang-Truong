@@ -71,7 +71,7 @@ public class Facility implements Serializable {
                 ;
     }
 
-    public String toStringCSV() {
+    public String toStringCSV1() {
         return this.serviceName+","+this.area+","+this.price+","+this.maxCapacity+","+
                 this.rentType;
     }

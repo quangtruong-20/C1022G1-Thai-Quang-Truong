@@ -16,7 +16,6 @@ public class DeleteValue {
                     arr[k] = arr[k + 1];
                 }
                 arr[arr.length - 1] = 0;
-                i--;
             }
 //
             }
