@@ -1,12 +1,12 @@
 create database product_manager;
 
 CREATE TABLE customer (
-    c_id INT PRIMARY KEY,
+    c_id INT PRIMARY KEY auto_increment,
     c_name VARCHAR(45),
     c_age INT
 );
 CREATE TABLE order1 (
-    o_id INT PRIMARY KEY,
+    o_id INT PRIMARY KEY auto_increment,
     c_id INT,
     o_date DATE,
     o_total_price DOUBLE,

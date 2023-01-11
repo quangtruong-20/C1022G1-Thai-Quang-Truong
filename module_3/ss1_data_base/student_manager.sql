@@ -14,4 +14,4 @@ age int,
 country varchar(50)
 );
 insert into teacher (id,name,age,country) values (2,'chanh',40,'Việt Nam');
-select*from teacher;
+select * from teacher;
