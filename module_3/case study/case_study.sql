@@ -98,24 +98,18 @@ foreign key (ma_hop_dong) references hop_dong (ma_hop_dong),
 foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem (ma_dich_vu_di_kem)
 );
 
-
 insert into vi_tri(ma_vi_tri,ten_vi_tri) values (1,'Quản lý');
 insert into vi_tri(ma_vi_tri,ten_vi_tri) values (2,'Nhân viên');
-
-
 
 insert into trinh_do(ma_trinh_do,ten_trinh_do) values (1,'Trung Cấp');
 insert into trinh_do(ma_trinh_do,ten_trinh_do) values (2,'Cao Đẳng');
 insert into trinh_do(ma_trinh_do,ten_trinh_do) values (3,'Đại Học');
 insert into trinh_do(ma_trinh_do,ten_trinh_do) values (4,'Sau Đại Học');
 
-
-
 insert into bo_phan(ma_bo_phan,ten_bo_phan) values (1,'Sale-Marketing');
 insert into bo_phan(ma_bo_phan,ten_bo_phan) values (2,'Hành chính');
 insert into bo_phan(ma_bo_phan,ten_bo_phan) values (3,'Phục vụ');
 insert into bo_phan(ma_bo_phan,ten_bo_phan) values (4,'Quản lý');
-
 
 insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan) values (1,'Nguyễn Văn An','1970-11-07','456231786',10000000,'0901234121','annguyen@gmail.com','295 Nguyễn Tất Thành, Đà Nẵng',1,3,1);
 insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan) values (2,'Lê Văn Bình','1997-04-09','654231234',7000000,'0934212314','binhlv@gmail.com','22 Yên Bái, Đà Nẵng',1,2,2);
@@ -128,15 +122,11 @@ insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_tho
 insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan) values (9,'Tòng Hoang','1982-09-03','256781231',6000000,'0245144444','hoangtong@gmail.com','213 Hàm Nghi, Đà Nẵng',2,4,4);
 insert into nhan_vien(ma_nhan_vien,ho_va_ten,ngay_sinh,so_cmnd,luong,so_dien_thoai,email,dia_chi,ma_vi_tri,ma_trinh_do,ma_bo_phan) values (10,'Nguyễn Công Đạo','1994-01-08','755434343',8000000,'0988767111','nguyencongdao12@gmail.com','6 Hoà Khánh, Đồng Nai',2,3,2);
 
-
-
 insert into loai_khach(ma_loai_khach,ten_loai_khach) values (1,'Diamond');
 insert into loai_khach(ma_loai_khach,ten_loai_khach) values (2,'Platinium');
 insert into loai_khach(ma_loai_khach,ten_loai_khach) values (3,'Gold');
 insert into loai_khach(ma_loai_khach,ten_loai_khach) values (4,'Silver');
 insert into loai_khach(ma_loai_khach,ten_loai_khach) values (5,'Member');
-
-
 
 insert into khach_hang(ma_khach_hang,ho_va_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi,ma_loai_khach) value (1,'Nguyễn Thị Hào','1970-11-07',0,'643431213','0945423362','thihao07@gmail.com','23 Nguyễn Hoàng, Đà Nẵng',5);
 insert into khach_hang(ma_khach_hang,ho_va_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi,ma_loai_khach) value (2,'Phạm Xuân Diệu','1992-08-08',1,'865342123','0954333333','xuandieu92@gmail.com','K77/22 Thái Phiên, Quảng Trị',3);
@@ -149,19 +139,14 @@ insert into khach_hang(ma_khach_hang,ho_va_ten,ngay_sinh,gioi_tinh,so_cmnd,so_di
 insert into khach_hang(ma_khach_hang,ho_va_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi,ma_loai_khach) value (9,'Trần Đại Danh','1994-07-01',1,'432341235','0643343433','danhhai99@gmail.com','24 Lý Thường Kiệt, Quảng Ngãi',1);
 insert into khach_hang(ma_khach_hang,ho_va_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi,ma_loai_khach) value (10,'Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2);
 
-
-
 insert into loai_dich_vu(ma_loai_dich_vu,ten_loai_dich_vu) value (1,'Villa');
 insert into loai_dich_vu(ma_loai_dich_vu,ten_loai_dich_vu) value (2,'House');
 insert into loai_dich_vu(ma_loai_dich_vu,ten_loai_dich_vu) value (3,'Room');
-
 
 insert into kieu_thue(ma_kieu_thue,ten_kieu_thue) value (1,'year');
 insert into kieu_thue(ma_kieu_thue,ten_kieu_thue) value (2,'month');
 insert into kieu_thue(ma_kieu_thue,ten_kieu_thue) value (3,'day');
 insert into kieu_thue(ma_kieu_thue,ten_kieu_thue) value (4,'hour');
-
-
 
 insert into dich_vu(ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,tieu_chuan_phong,mo_ta_tien_nghi_khac,dien_tich_ho_boi,so_tang,ma_kieu_thue,ma_loai_dich_vu) value (1,'Villa Beach Front',25000,1000000,10,'vip','Có hồ bơi',500,4,3,1);
 insert into dich_vu(ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,tieu_chuan_phong,mo_ta_tien_nghi_khac,so_tang,ma_kieu_thue,ma_loai_dich_vu) value (2,'House Princess 01',14000,5000000,7,'vip','Có thêm bếp nướng',3,2,2);
@@ -170,14 +155,12 @@ insert into dich_vu(ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_d
 insert into dich_vu(ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,tieu_chuan_phong,mo_ta_tien_nghi_khac,so_tang,ma_kieu_thue,ma_loai_dich_vu) value (5,'House Princess 02',10000,4000000,5,'normal','Có thêm bếp nướng',2,3,2);
 insert into dich_vu(ma_dich_vu,ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,tieu_chuan_phong,mo_ta_tien_nghi_khac,dich_vu_mien_phi_di_kem,ma_kieu_thue,ma_loai_dich_vu) value (6,'Room Twin 02',3000,900000,2,'normal','Có tivi','1 Xe máy',4,3);
 
-
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (1,'Karaoke',10000,'giờ','tiện nghi, hiện tại');
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (2,'Thuê xe máy',10000,'chiếc','hỏng 1 xe');
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (3,'Thuê xe đạp',20000,'chiếc','tốt');
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (4,'Buffet buổi sáng',15000,'suất','đầy đủ đồ ăn, tráng miệng');
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (5,'Buffet buổi trưa',90000,'suất','đầy đủ đồ ăn, tráng miệng');
 insert into dich_vu_di_kem(ma_dich_vu_di_kem,ten_dich_vu_di_kem,gia,don_vi,trang_thai) value (6,'Buffet buổi tối',16000,'suất','đầy đủ đồ ăn, tráng miệng');
-
 
 insert into hop_dong(ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu) value (1,'2020-12-08','2020-12-08',0,3,1,3);
 insert into hop_dong(ma_hop_dong,ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu) value (2,'2020-07-14','2020-07-21',200000,7,3,1);
