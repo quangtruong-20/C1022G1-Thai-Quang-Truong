@@ -184,4 +184,15 @@ insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet,so_luong,ma_hop_dong,ma_dich_
 insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet,so_luong,ma_hop_dong,ma_dich_vu_di_kem) value (7,2,1,2);
 insert into hop_dong_chi_tiet(ma_hop_dong_chi_tiet,so_luong,ma_hop_dong,ma_dich_vu_di_kem) value (8,2,12,2);
 
-
+select * from vi_tri; 
+select * from trinh_do;
+select * from bo_phan;
+select * from nhan_vien;
+select * from loai_khach;
+select * from khach_hang;
+select * from loai_dich_vu;
+select * from kieu_thue;
+select * from dich_vu;
+select * from dich_vu_di_kem;
+select * from hop_dong;
+select * from hop_dong_chi_tiet;
