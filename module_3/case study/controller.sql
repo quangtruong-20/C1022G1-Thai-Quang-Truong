@@ -157,22 +157,35 @@ where nv.ma_nhan_vien not in
 (select ma_nhan_vien from hop_dong hd
 where year(hd.ngay_lam_hop_dong) between 2019 and 2021);
 
-select * from nhan_vien
+select * from nhan_vien;
 
 -- 17.	Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum lên Diamond, 
 -- chỉ cập nhật những khách hàng đã từng đặt phòng với Tổng Tiền thanh toán trong năm 2021 là lớn hơn 10.000.000 VNĐ.
--- update loai_khach lk
--- set ten_loai_khach = 'Diamond'
--- where ten_loai_khach = 'Platinum' and 
---  lk.ma_loai_khach= (select sum(chi_phi_thue) from dich_vu dv join hop_dong hd on dv.ma_dich_vu = hd.ma_dich_vu where year(hd.ngay_lam_hop_dong)=2021) > 10000000 ;
+update khach_hang  
+set 
+    khach_hang.ma_loai_khach = 1
+where
+    khach_hang.ma_khach_hang in (select 
+            *
+        from
+            (select 
+                kh.ma_khach_hang
+            from
+                khach_hang kh
+            join hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang
+            join dich_vu dv on hd.ma_dich_vu = dv.ma_dich_vu
+            join hop_dong_chi_tiet hdct on hd.ma_hop_dong = hdct.ma_hop_dong
+            join dich_vu_di_kem dvdk on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+            where
+                year(hd.ngay_lam_hop_dong) = 2021
+                    and ma_loai_khach = 2
+            group by hd.ma_khach_hang
+            having sum(dv.chi_phi_thue + hdct.so_luong * dvdk.gia) > 1000000) as khach_hang_tam_thoi);
 
-
-
-select * from khach_hang kh join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach;
+-- select * from khach_hang 
 
 -- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
-set 
-foreign_key_checks = 0;
+set foreign_key_checks = 0;
 delete from khach_hang kh 
 where kh.ma_khach_hang 
 in (select hd.ma_khach_hang from hop_dong hd where year(hd.ngay_lam_hop_dong) < 2021 );
@@ -194,4 +207,52 @@ select * from hop_dong_chi_tiet ;
 select ma_nhan_vien,ho_va_ten,email,so_dien_thoai,ngay_sinh,dia_chi from nhan_vien 
 union 
 select ma_khach_hang,ho_va_ten,email,so_dien_thoai,ngay_sinh,dia_chi from Khach_hang;
+
+-- 21.	Tạo khung nhìn có tên là v_nhan_vien để lấy được thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” 
+-- và đã từng lập hợp đồng cho một hoặc nhiều khách hàng bất kì với ngày lập hợp đồng là “12/12/2019”.v_nhan_vien
+create view v_nhan_vien as 
+select *
+from nhan_vien nv 
+where nv.dia_chi like "%Hải Châu" and exists (select hd.ma_khach_hang from hop_dong hd WHERE nv.ma_nhan_vien = hd.ma_nhan_vien
+  AND hd.ngay_lam_hop_dong = '2019-12-12');
+
+select * from v_nhan_vien;
+drop view v_nhan_vien;
+
+CREATE VIEW v_nhan_vien AS
+SELECT *
+FROM nhan_vien
+WHERE dia_chi = 'Hải Châu'
+AND EXISTS (
+  SELECT 1
+  FROM hop_dong hd
+  WHERE nhan_vien.ma_nhan_vien = hd.ma_nhan_vien
+  AND hd.ngay_lam_hop_dong = '2019-12-12'
+);
+
+-- 22.	Thông qua khung nhìn v_nhan_vien thực hiện cập nhật địa chỉ thành “Liên Chiểu” đối với tất cả các nhân viên được nhìn thấy bởi khung nhìn này.
+
+-- 23.	Tạo Stored Procedure sp_xoa_khach_hang dùng để xóa thông tin của một khách hàng nào đó với ma_khach_hang được truyền vào như là 1 tham số của sp_xoa_khach_hang.
+
+-- 24.	Tạo Stored Procedure sp_them_moi_hop_dong dùng để thêm mới vào bảng hop_dong với yêu cầu sp_them_moi_hop_dong phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung,
+-- với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
+
+-- 25.	Tạo Trigger có tên tr_xoa_hop_dong khi xóa bản ghi trong bảng hop_dong thì hiển thị tổng số lượng bản ghi còn lại có trong bảng hop_dong 
+-- ra giao diện console của database.
+-- Lưu ý: Đối với MySQL thì sử dụng SIGNAL hoặc ghi log thay cho việc ghi ở console.
+
+-- 26.	Tạo Trigger có tên tr_cap_nhat_hop_dong khi cập nhật ngày kết thúc hợp đồng, cần kiểm tra xem thời gian cập nhật có phù hợp hay không,
+-- với quy tắc sau: Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày. Nếu dữ liệu hợp lệ thì cho phép cập nhật, nếu dữ liệu không hợp lệ thì
+-- in ra thông báo “Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày” trên console của database.
+-- Lưu ý: Đối với MySQL thì sử dụng SIGNAL hoặc ghi log thay cho việc ghi ở console.
+
+-- 27.	Tạo Function thực hiện yêu cầu sau:
+-- a.	Tạo Function func_dem_dich_vu: Đếm các dịch vụ đã được sử dụng với tổng tiền là > 2.000.000 VNĐ.
+-- b.	Tạo Function func_tinh_thoi_gian_hop_dong: Tính khoảng thời gian dài nhất tính từ lúc bắt đầu làm hợp đồng đến lúc kết thúc hợp đồng mà khách hàng đã thực hiện
+-- thuê dịch vụ (lưu ý chỉ xét các khoảng thời gian dựa vào từng lần làm hợp đồng thuê dịch vụ, không xét trên toàn bộ các lần làm hợp đồng).
+-- Mã của khách hàng được truyền vào như là 1 tham số của function này.
+
+-- 28.	Tạo Stored Procedure sp_xoa_dich_vu_va_hd_room để tìm các dịch vụ được thuê bởi khách hàng với loại dịch vụ là “Room” từ đầu năm 2015 đến hết năm 2019
+-- để xóa thông tin của các dịch vụ đó (tức là xóa các bảng ghi trong bảng dich_vu) và xóa những hop_dong sử dụng dịch vụ liên quan
+-- (tức là phải xóa những bản gi trong bảng hop_dong) và những bản liên quan khác.
 
