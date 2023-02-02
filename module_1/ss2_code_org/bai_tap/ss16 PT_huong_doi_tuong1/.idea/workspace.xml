@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d28ca88d-120c-40ee-b35f-e6df71bfdc01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Temperature.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hinh_chu_nhat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meobatchuot.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module2/src/GiaiThua.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module2/src/GiaiThua.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,7 @@
       <workItem from="1669643881655" duration="591000" />
       <workItem from="1669644493094" duration="165000" />
       <workItem from="1669877895743" duration="188000" />
+      <workItem from="1675260170749" duration="7000" />
     </task>
     <servers />
   </component>
