@@ -1,0 +1,36 @@
+.logo {
+    width: 100px;
+    height: 29px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://static-znews.zingcdn.me/images/logo-zing-home.svg);
+    position: relative;
+}
+
+.font-custom {
+    color: black !important;
+    font-weight: bold;
+
+}
+
+.font-custom:hover {
+    color: aqua !important;
+    border-bottom: 2px solid aqua;
+}
+
+.custom-dropdown {
+    font-weight: bold !important;
+    color: black !important;
+    font-size: 25px !important;
+    line-height: 8px;
+}
+
+.img-custom {
+    height: 96px;
+}
+
+.custom-text-left {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
