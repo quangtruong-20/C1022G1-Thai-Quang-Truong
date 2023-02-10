@@ -15,9 +15,7 @@ public class ProductDiscountCalculatorServlet extends HttpServlet {
         String productDescription = request.getParameter("description");
         double productPrice = Double.parseDouble(request.getParameter("price"));
         double productDiscount = Double.parseDouble(request.getParameter("discount"));
-
         double productDiscountAmount = productPrice * productDiscount * 0.01;
-
         double productDiscountPrice = - productDiscountAmount + productPrice ;
 
 
