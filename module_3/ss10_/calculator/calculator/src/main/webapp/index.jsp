@@ -21,8 +21,8 @@
   </div>
 
   <div class="form-group">
-    <label for="calculate">Chọn kiểu tính</label>
-    <select class="form-control" name="calculate" id="calculate">
+    <label for="operator">Chọn kiểu tính</label>
+    <select class="form-control" name="operator" id="operator">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="*">*</option>

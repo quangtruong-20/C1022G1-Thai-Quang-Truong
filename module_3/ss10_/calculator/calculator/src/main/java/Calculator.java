@@ -12,7 +12,7 @@ public class Calculator {
 
             case "/":
                 if (n2==0){
-                    throw new ArithmeticException();
+                    throw new RuntimeException("Can't divide by zero");
                 }
                 return n1/n2;
             default:

@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d28ca88d-120c-40ee-b35f-e6df71bfdc01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../module_3/ss7_/cartoon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module_3/ss7_/layout_rwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module2/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module2/src/GiaiThua.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module2/src/module2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module_3/ss6_/bai_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/ss6_/bai_2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/ss8_/bai_tap/microsoft/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/ss8_/bai_tap/microsoft/microsoft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module_3/ss8_/bai_tap/microsoft/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module_3/ss8_/bai_tap/microsoft/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +63,7 @@
       <workItem from="1669877895743" duration="188000" />
       <workItem from="1675260170749" duration="7000" />
       <workItem from="1675393025553" duration="15000" />
+      <workItem from="1675841327395" duration="284000" />
     </task>
     <servers />
   </component>

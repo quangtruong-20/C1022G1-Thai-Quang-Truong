@@ -8,14 +8,14 @@ public class CalculatorServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        double n1 = Double.parseDouble(request.getParameter("n1"));
-        double n2 = Double.parseDouble(request.getParameter("n2"));
+        double number1 = Double.parseDouble(request.getParameter("n1"));
+        double number2 = Double.parseDouble(request.getParameter("n2"));
         String operator = request.getParameter("operator");
 
         double result = 0;
 
         try{
-            result = Calculator.calculate(n1,operator,n2);
+            result = Calculator.calculate(number1,operator,number2);
             request.setAttribute("result",result);
 
         }catch (
