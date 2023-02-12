@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "ss8_",
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "ss8_"
+  }
+}
