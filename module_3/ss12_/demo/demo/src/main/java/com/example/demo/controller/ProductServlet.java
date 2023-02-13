@@ -32,8 +32,7 @@ public class ProductServlet extends HttpServlet {
             case "delete":
                 showDeleteForm(request, response);
                 break;
-            case "findByName":
-                break;
+
             case "view":
                 viewProduct(request, response);
                 break;
@@ -124,7 +123,7 @@ public class ProductServlet extends HttpServlet {
 
         }
     }
-//post
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
@@ -140,8 +139,6 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "delete":
                 deleteProduct(request, response);
-                break;
-            case "findByName":
                 break;
             default:
                 break;

@@ -14,7 +14,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h1>Products</h1>
+<h1 style="text-align: center;">Products</h1>
 <p><a href="/products?action=create">Create new product</a></p>
 
 <table class="table">
@@ -30,7 +30,7 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach var="product" items="${products}">
+    <c:forEach var="product" items='${requestScope["products"]}'>
         <tr>
             <td><a href="/products?action=view&id=${product.getId()}">${product.name}</a></td>
             <td>${product.price}</td>

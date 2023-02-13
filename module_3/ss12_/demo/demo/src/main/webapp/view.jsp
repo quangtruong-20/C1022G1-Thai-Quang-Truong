@@ -21,13 +21,18 @@
         <td>${requestScope["product"].getName()}</td>
     </tr>
     <tr>
-        <td>Email: </td>
-        <td>${requestScope["product"].getEmail()}</td>
+        <td>Price: </td>
+        <td>${requestScope["product"].getPrice()}</td>
     </tr>
     <tr>
-        <td>Address: </td>
-        <td>${requestScope["product"].getAddress()}</td>
+        <td>Detail: </td>
+        <td>${requestScope["product"].getDetail()}</td>
     </tr>
+    <tr>
+        <td>NSX: </td>
+        <td>${requestScope["product"].getNsx()}</td>
+    </tr>
+
 </table>
 </body>
 </html>

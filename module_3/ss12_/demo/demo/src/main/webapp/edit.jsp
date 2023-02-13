@@ -39,7 +39,7 @@
             </tr>
             <tr>
                 <td>NSX: </td>
-                <td><input type="text" name="nsx" id="nsx" value="${requestScope["product"].getNSX()}"></td>
+                <td><input type="text" name="nsx" id="nsx" value="${requestScope["product"].getNsx()}"></td>
             </tr>
             <tr>
                 <td></td>

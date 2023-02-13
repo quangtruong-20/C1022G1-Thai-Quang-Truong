@@ -10,15 +10,17 @@
     </style>
 </head>
 <body>
+<h1>Create new products</h1>
 <p>
-<c:if test="${message != null}">
-<span class="message">${message}</span>
+<c:if test='${requestScope["message"] != null}'>
+<span class="message">${requestScope["message"]}</span>
 </c:if>
 </p>
 <p><a href="/products">Back to product list</a></p>
-<form action="post">
+<form method="post">
     <fieldset >
-        <legend>product information</legend>
+        <legend>Product information</legend>
+        <table>
         <tr>
             <td>Name: </td>
             <td><input name="name" id="name"  type="text" ></td>
@@ -39,6 +41,7 @@
             <td></td>
             <td><input type="submit" value="Create product"></td>
         </tr>
+        </table>
     </fieldset>
 </form>
 

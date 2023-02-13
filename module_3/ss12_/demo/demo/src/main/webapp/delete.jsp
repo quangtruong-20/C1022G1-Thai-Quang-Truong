@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Deleting product</title>
 </head>
 <body>
 <h1>Delete product</h1>
@@ -21,20 +21,20 @@
         <legend>Product information</legend>
         <table>
             <tr>
-                <td>Name: </td>
+                <td>Name:</td>
                 <td>${requestScope["product"].getName()}</td>
             </tr>
             <tr>
-                <td>Price: </td>
-                <td>${requestScope["product"].getProduct()}</td>
+                <td>Price:</td>
+                <td>${requestScope["product"].getPrice()}</td>
             </tr>
             <tr>
-                <td>Detail: </td>
+                <td>Detail:</td>
                 <td>${requestScope["product"].getDetail()}</td>
             </tr>
             <tr>
-                <td>NSX: </td>
-                <td>${requestScope["product"].getNSX()}</td>
+                <td>NSX:</td>
+                <td>${requestScope["product"].getNsx()}</td>
             </tr>
             <tr>
                 <td><input type="submit" value="Delete product"></td>
@@ -42,5 +42,6 @@
             </tr>
         </table>
     </fieldset>
+</form>
 </body>
 </html>
