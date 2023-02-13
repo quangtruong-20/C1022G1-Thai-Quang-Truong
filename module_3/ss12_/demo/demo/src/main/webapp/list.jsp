@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Products</h1>
-<p><a href="/products?action=create">Create new customer</a></p>
+<p><a href="/products?action=create">Create new product</a></p>
 
 <table class="table">
     <thead>

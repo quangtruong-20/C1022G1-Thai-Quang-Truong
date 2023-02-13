@@ -15,10 +15,10 @@
 <span class="message">${message}</span>
 </c:if>
 </p>
-<p><a href="/products">Back to customer list</a></p>
+<p><a href="/products">Back to product list</a></p>
 <form action="post">
     <fieldset >
-        <legend>Customer information</legend>
+        <legend>product information</legend>
         <tr>
             <td>Name: </td>
             <td><input name="name" id="name"  type="text" ></td>
@@ -37,7 +37,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" value="Create customer"></td>
+            <td><input type="submit" value="Create product"></td>
         </tr>
     </fieldset>
 </form>

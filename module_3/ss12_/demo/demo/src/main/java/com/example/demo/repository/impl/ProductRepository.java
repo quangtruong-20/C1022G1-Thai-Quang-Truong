@@ -32,16 +32,21 @@ products.put(product.getId(),product);
 
     @Override
     public Product findByName(String name) {
-        return null;
+        return products.get(name);
     }
 
     @Override
     public void update(int id, Product product) {
-
+        products.put(id,product);
     }
 
     @Override
     public void remove(int id) {
+        products.remove(id);
+    }
 
+    @Override
+    public Product findById(int id) {
+        return products.get(id);
     }
 }
