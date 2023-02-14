@@ -22,9 +22,11 @@ public class UsersServlet extends HttpServlet {
                 request.getRequestDispatcher("/view/create.jsp").forward(request,response);
                 break;
             case "edit":
-                request.getRequestDispatcher("/edit.jsp").forward(request,response);
+                request.getRequestDispatcher("/view/edit.jsp").forward(request,response);
+                break;
             case "delete":
                 request.getRequestDispatcher("/view/delete.jsp").forward(request,response);
+                break;
             default:
                 request.setAttribute("userList",iUserService.selectAllUsers());
                 request.getRequestDispatcher("/view/list.jsp").forward(request,response);
@@ -42,10 +44,10 @@ public class UsersServlet extends HttpServlet {
                 request.getRequestDispatcher("/view/create.jsp").forward(request,response);
                 break;
             case "edit":
-                request.getRequestDispatcher("/edit.jsp").forward(request,response);
-            case "delete":
-                request.getRequestDispatcher("/view/delete.jsp").forward(request,response);
-            default:
+                request.getRequestDispatcher("/view/edit.jsp").forward(request,response);
+
+            break;
+                default:
                 request.setAttribute("userList",iUserService.selectAllUsers());
                 request.getRequestDispatcher("/view/list.jsp").forward(request,response);
         }

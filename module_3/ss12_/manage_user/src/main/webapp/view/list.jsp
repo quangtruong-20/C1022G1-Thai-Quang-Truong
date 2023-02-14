@@ -31,8 +31,8 @@
             <td>${user.name}</td>
             <td>${user.email}</td>
             <td>${user.country}</td>
-            <td><a href="/users?action=edit&id=${requestScope["user"].getId()}">edit</a></td>
-            <td><a href="/users?action=delete&id=${requestScope["user"].getId()}">delete</a></td>
+            <td><a href="/users?action=edit&id=${user.id}">Edit</a></td>
+            <td><a href="/users?action=delete&id=${user.id}">Delete</a></td>
 
         </tr>
     </c:forEach>

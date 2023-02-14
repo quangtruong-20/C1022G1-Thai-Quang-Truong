@@ -22,15 +22,15 @@
         <table>
             <tr>
                 <td>Name:</td>
-                <td>${requestScope["user"].getName}</td>
+                <td>${user.name}</td>
             </tr>
             <tr>
                 <td>Email:</td>
-                <td>${requestScope["user"].getEmail()}</td>
+                <td>${user.email}</td>
             </tr>
             <tr>
                 <td>Country:</td>
-                <td>${requestScope["user"].getCountry()}</td>
+                <td>${user.country}</td>
             </tr>
 
             <tr>

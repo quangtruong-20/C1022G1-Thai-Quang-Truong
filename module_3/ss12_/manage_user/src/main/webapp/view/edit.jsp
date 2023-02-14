@@ -26,15 +26,15 @@
         <table>
             <tr>
                 <td>Name: </td>
-                <td><input type="text" name="name" id="name" value="${requestScope["user"].getName()}"></td>
+                <td><input type="text" name="name" id="name" value="${user.name}"></td>
             </tr>
             <tr>
                 <td>Email: </td>
-                <td><input type="text" name="email" id="email" value="${requestScope["user"].getPrice()}"></td>
+                <td><input type="text" name="email" id="email" value="${user.email}"></td>
             </tr>
             <tr>
                 <td>Country: </td>
-                <td><input type="text" name="country" id="country" value="${requestScope["user"].getDetail()}"></td>
+                <td><input type="text" name="country" id="country" value="${user.country}"></td>
             </tr>
 
             <tr>
