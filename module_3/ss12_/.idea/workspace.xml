@@ -3,89 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="c82b7f82-5d68-4dc7-96bc-7240896f41ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../C1022G1-NguyenLeVanKhai" beforeDir="false" afterPath="$PROJECT_DIR$/../C1022G1-NguyenLeVanKhai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/java/com/example/b1/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/java/controller/CustomerServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/java/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/java/service/CustomerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/java/service/ICustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss11_/thuc_hanh/b1/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/.idea/ss12_.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/controller/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/repository/IProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/repository/impl/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/service/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/java/com/example/demo/service/impl/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/delete.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/error-404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/demo/demo/src/main/webapp/view.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/.idea/manage_product.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/controller/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/model/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/repository/IProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/repository/impl/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/service/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/java/com/example/manage_product/service/impl/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_/manage_product/manage_product/src/main/webapp/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../group_1_casestudy/beer-manager.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_user/src/main/webapp/view/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/manage_user/src/main/webapp/view/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_user/src/main/webapp/view/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/manage_user/src/main/webapp/view/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage_user/src/main/webapp/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/manage_user/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/java/com/example/manage_user/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/java/com/example/manage_user/dao/IUserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/java/com/example/manage_user/dao/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/java/com/example/manage_user/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/webapp/user/create.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/webapp/user/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss13_/manage_user/src/main/webapp/user/list.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +47,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/codegym/module_3/s12_",
+    "last_opened_file_path": "D:/codegym/module_3/ss12_/manage_user",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -119,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676345085511</updated>
       <workItem from="1676345086209" duration="255000" />
+      <workItem from="1676453574475" duration="180000" />
     </task>
     <servers />
   </component>

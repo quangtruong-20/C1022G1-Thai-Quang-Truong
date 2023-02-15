@@ -1,5 +1,10 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%--
+  Created by IntelliJ IDEA.
+  User: THC
+  Date: 2/15/2023
+  Time: 8:04 PM
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
@@ -14,32 +19,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h1>Create new users</h1>
-<p><a href="/users">Back to users list</a></p>
-<form method="post">
-    <fieldset >
-        <legend>Users information</legend>
-        <table>
-            <tr>
-                <td>Name: </td>
-                <td><input name="name" id="name"  type="text" ></td>
-            </tr>
-            <tr>
-                <td>Email: </td>
-                <td><input name="email" id="email"  type="text" ></td>
-            </tr>
-            <tr>
-                <td>Country: </td>
-                <td><input name="country" id="country"  type="text" ></td>
-            </tr>
 
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Create product"></td>
-            </tr>
-        </table>
-    </fieldset>
-</form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -53,3 +33,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
