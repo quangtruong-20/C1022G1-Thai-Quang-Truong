@@ -11,31 +11,31 @@ import java.util.List;
 public class UserService implements IUserService {
     IUserRepository repository = new UserRepository();
     @Override
-    public void insertUser(User user) throws SQLException {
-        repository.insertUser(user);
+    public void insert(User user) throws SQLException {
+        repository.insert(user);
     }
 
     @Override
-    public User selectUser(int id) {
+    public User select(int id) {
         try {
-            return repository.selectUser(id);
+            return repository.select(id);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     @Override
-    public List<User> selectAllUsers() {
-        return repository.selectAllUsers();
+    public List<User> selectAll() {
+        return repository.selectAll();
     }
 
     @Override
-    public boolean deleteUser(int id) throws SQLException {
-        return repository.deleteUser(id);
+    public void delete(int id) throws SQLException {
+        repository.delete(id);
     }
 
     @Override
-    public boolean updateUser(User user) throws SQLException {
-        return repository.updateUser(user);
+    public void update(User user) throws SQLException {
+        repository.update(user);
     }
 }

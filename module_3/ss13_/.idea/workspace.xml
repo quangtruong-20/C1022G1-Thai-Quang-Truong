@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f82c24d-1cc4-4803-b8aa-03d7dcf9412e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../C1022G1-NguyenLeVanKhai" beforeDir="false" afterPath="$PROJECT_DIR$/../C1022G1-NguyenLeVanKhai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss11_/demo/demo/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss11_/demo/demo/src/main/webapp/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_/manage_user/src/main/java/com/example/manage_user/controller/UsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_/manage_user/src/main/java/com/example/manage_user/controller/UsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_/manage_user/src/main/java/com/example/manage_user/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_/manage_user/src/main/java/com/example/manage_user/repository/impl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_/manage_user/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_/manage_user/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_/manage_user/src/main/webapp/view/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_/manage_user/src/main/webapp/view/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_/manage_user/src/main/webapp/view/view.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Ll3I6RhSNB7hQYM8gEsiPN4UXO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codegym/module_3/ss13_",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f82c24d-1cc4-4803-b8aa-03d7dcf9412e" name="Changes" comment="" />
+      <created>1676431758297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676431758297</updated>
+      <workItem from="1676431759770" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

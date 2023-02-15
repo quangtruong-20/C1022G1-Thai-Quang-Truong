@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,9 +15,12 @@
 </head>
 <body>
 <h1 style="text-align: center;">Users</h1>
+<p><a href="/users?action=create">Create new user</a></p>
+
 <table class="table">
     <thead>
     <tr>
+
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
@@ -33,13 +38,11 @@
             <td>${user.country}</td>
             <td><a href="/users?action=edit&id=${user.id}">Edit</a></td>
             <td><a href="/users?action=delete&id=${user.id}">Delete</a></td>
-
         </tr>
     </c:forEach>
-
     </tbody>
 </table>
-<p><a href="/users?action=create">Create new users</a></p>
+</form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
