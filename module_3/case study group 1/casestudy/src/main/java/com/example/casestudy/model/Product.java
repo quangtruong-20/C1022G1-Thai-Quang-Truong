@@ -1,42 +1,45 @@
 package com.example.casestudy.model;
 
 public class Product {
-    private int id;
-    private String name;
-    private double price;
+    private int id_sp;
+    private String ten_sp;
+    private String don_gia;
 
-    public Product(int id, String name, double price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
+    public Product(int id_sp, String ten_sp, String don_gia) {
+        this.id_sp = id_sp;
+        this.ten_sp = ten_sp;
+        this.don_gia = don_gia;
     }
 
-    public Product(String name, double price) {
-        this.name = name;
-        this.price = price;
+    public Product() {
     }
 
-    public int getId() {
-        return id;
+    public Product(String ten_sp, String don_gia) {
+        this.ten_sp = ten_sp;
+        this.don_gia = don_gia;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getId_sp() {
+        return id_sp;
     }
 
-    public String getName() {
-        return name;
+    public void setId_sp(int id_sp) {
+        this.id_sp = id_sp;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getTen_sp() {
+        return ten_sp;
     }
 
-    public double getPrice() {
-        return price;
+    public void setTen_sp(String ten_sp) {
+        this.ten_sp = ten_sp;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public String getDon_gia() {
+        return don_gia;
+    }
+
+    public void setDon_gia(String don_gia) {
+        this.don_gia = don_gia;
     }
 }

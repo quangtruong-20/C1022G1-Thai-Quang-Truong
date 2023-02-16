@@ -1,29 +1,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: THC
-  Date: 2/15/2023
-  Time: 8:04 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>Products List</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
     <h1>List Product</h1>
-    .
-
+    <p><a href="/products?actionUser=create">Create new product</a></p>
     <table class="table">
         <thead>
         <tr>
@@ -35,24 +24,18 @@
         </tr>
         </thead>
         <tbody>
-
-        <c:forEach var="product" items="productList">
+        <c:forEach var="product" items="${productList}">
             <tr>
-                <td>${product.id}</td>
-                <td>${product.name}</td>
-                <td>${product.price}</td>
-                <td><a href=/products?actionUser=edit&id=${user.id}>Edit</a></td>
-                <td><a href=/products?actionUser=delete&id=${user.id}>Delete</a></td>
+                <td>${product.id_sp}</td>
+                <td>${product.ten_sp}</td>
+                <td>${product.don_gia}</td>
+                <td><a href=/products?actionUser=update&id_sp=${product.id_sp}>Edit</a></td>
+                <td><a href=/products?actionUser=delete&id_sp=${product.id_sp}>Delete</a></td>
             </tr>
         </c:forEach>
-
         </tbody>
     </table>
-
 </div>
-
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

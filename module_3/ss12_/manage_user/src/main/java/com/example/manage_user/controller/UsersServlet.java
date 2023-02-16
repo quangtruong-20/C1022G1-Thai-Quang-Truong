@@ -69,7 +69,7 @@ public class UsersServlet extends HttpServlet {
         }
     }
     private void performDelete(HttpServletRequest request, HttpServletResponse response) throws SQLException {
-   int  id = Integer.parseInt(request.getParameter("name"));
+   int  id = Integer.parseInt(request.getParameter("id"));
    iUserService.delete(id);
         try {
             response.sendRedirect("/users");
@@ -136,8 +136,8 @@ public class UsersServlet extends HttpServlet {
 
     private void performAdd(HttpServletRequest request, HttpServletResponse response) throws SQLException {
         String name = request.getParameter("name");
-        String email = request.getParameter("email ");
-        String country = request.getParameter("country ");
+        String email = request.getParameter("email");
+        String country = request.getParameter("country");
         User user = new User(name, email, country);
         iUserService.insert(user);
         try {

@@ -19,7 +19,33 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+<h1>Edit product</h1>
 
+<p>
+  <a href="/products">Back to product list</a>
+</p>
+<form method="post">
+  <fieldset>
+    <legend>product information</legend>
+    <table>
+      <tr>
+        <td><input type="hidden" value="${product.id_sp}"></td>
+      </tr>
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" name="ten_sp" id="ten_sp" value="${product.ten_sp}"></td>
+      </tr>
+      <tr>
+        <td>Price: </td>
+        <td><input type="text" name="don_gia" id="don_gia" value="${product.don_gia}"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Update product"></td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

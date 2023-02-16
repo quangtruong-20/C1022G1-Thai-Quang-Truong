@@ -15,7 +15,8 @@
 </head>
 <body>
 <h1 style="text-align: center;">Users</h1>
-<p><a href="/users?action=create">Create new user</a></p>
+
+<p><a href="/users?actionUser=create">Create new user</a></p>
 
 <table class="table">
     <thead>
@@ -36,8 +37,8 @@
             <td>${user.name}</td>
             <td>${user.email}</td>
             <td>${user.country}</td>
-            <td><a href="/users?action=edit&id=${user.id}">Edit</a></td>
-            <td><a href="/users?action=delete&id=${user.id}">Delete</a></td>
+            <td><a href="/users?actionUser=edit&id=${user.id}">Edit</a></td>
+            <td><a href="/users?actionUser=delete&id=${user.id}">Delete</a></td>
         </tr>
     </c:forEach>
     </tbody>

@@ -19,7 +19,27 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-
+<h1>Create new product</h1>
+<p><a href="/products">Back to product list</a></p>
+<form method="post">
+    <fieldset >
+        <legend>Product information</legend>
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input name="ten_sp" id="ten_sp"  type="text" ></td>
+            </tr>
+            <tr>
+                <td>Price: </td>
+                <td><input name="don_gia" id="don_gia"  type="text" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Create product"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
